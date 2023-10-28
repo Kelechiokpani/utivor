@@ -1,28 +1,26 @@
 import { Metadata } from 'next';
-import Layout from '../../layout/layout';
+import React from 'react';
+import Footer from "../../Blocks/components/Website/Navigation/Footer";
+import NavigationMenu from "../../Blocks/components/Website/Navigation/NavigationMenu";
 
-interface AppLayoutProps {
+interface SimpleLayoutProps {
     children: React.ReactNode;
 }
 
-export const metadata: Metadata = {
-    title: 'PrimeReact Sakai',
-    description: 'The ultimate collection of design-agnostic, flexible and accessible React UI Components.',
-    robots: { index: false, follow: false },
-    viewport: { initialScale: 1, width: 'device-width' },
-    openGraph: {
-        type: 'website',
-        title: 'PrimeReact SAKAI-REACT',
-        url: 'https://sakai.primereact.org/',
-        description: 'The ultimate collection of design-agnostic, flexible and accessible React UI Components.',
-        images: ['https://www.primefaces.org/static/social/sakai-react.png'],
-        ttl: 604800
-    },
-    icons: {
-        icon: '/favicon.ico'
-    }
+ const metadata: Metadata = {
+    title: 'KreativeRock Digitals',
+    description: 'The ultimate collection of design-agnostic, flexible and accessible React UI Components.'
 };
 
-export default function AppLayout({ children }: AppLayoutProps) {
-    return <Layout>{children}</Layout>;
+
+const SimpleLayout = ({ children, showNavBar = false, showFooter = false, }: any) => {
+    return (
+        <React.Fragment>
+            {showNavBar && <NavigationMenu />}
+            {children}
+            {showFooter && <Footer />}
+        </React.Fragment>
+    );
 }
+
+export default SimpleLayout;
