@@ -1,9 +1,9 @@
 "use client"
-import {Hero_section} from "../../../public/Styled_component/StyledComponent";
-import {CustomButton} from "../../ReusedComponent/Styled_Button";
-import Message from "../../../public/website/pricing/msg.png"
+import Message from "../../../../public/image/website/pricing/msg.png"
 import Image from "next/image";
 import {useRouter} from "next/navigation";
+import {Hero_section} from "../../../../styles/Styled_component/StyledComponent";
+import {CustomButton} from "../../../ReusedComponent/Styled_Button";
 
 const FeedBack = ( )=>{
     const router = useRouter();
