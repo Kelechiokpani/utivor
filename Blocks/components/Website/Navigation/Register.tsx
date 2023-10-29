@@ -108,7 +108,7 @@ const Register = ( ) =>{
             <div className="flex h-full bg-cover overflow-hidden">
                 <Navigation_Style className="hidden md:block md:w-6  bg-no-repeat bg-cover bg-bluee-500 relative"
                     // style={{ backgroundImage: "url('/website/navigation/img.png')", backgroundSize:"cover"  }}>
-                                  style={{ backgroundImage: "url('/image/website/img_1.png')"  }}
+                                  style={{ backgroundImage: "url('/image/website/img_1.png')" }}
                 >
                 </Navigation_Style>
 
@@ -119,7 +119,6 @@ const Register = ( ) =>{
                         <span className="text-600 font-medium mr-2">Already have an account?</span>
                         <a href='/login' className="font-medium no-underline text-orange-600 cursor-pointer">Login !</a>
                     </div>
-
                         <CustomForm
                             removeRestButton
                             enableReinitialize
@@ -135,22 +134,6 @@ const Register = ( ) =>{
                             submitButtonText="Contunie"
                             formInputs={inputList}
                         />
-
-
-                    <Divider align="center" className="my-3">
-                        <span className="text-900 font-normal text-sm">or Sign up with</span>
-                    </Divider>
-
-                    <div className="flex justify-content-center mt-4 mb-3">
-                        <button className="p-ripple  lg:w-3  font-medium border-1 border-teal-600 border-round-sm   bg-transparent py-2 px-2 p-component hover:surface-200 active:surface-300 text-teal-600 cursor-pointer transition-colors transition-duration-150 inline-flex align-items-center justify-content-center">
-                            <i className="pi pi-google text-2xl text-teal-600 mr-2"></i>
-                            <span className='mt-1'>Google</span>
-                        </button>
-                        <button className="p-ripple mr-2 ml-4 lg:w-3  font-medium border-1 border-teal-600  border-round-sm  bg-transparent py-2 px-2 p-component hover:surface-200 active:surface-300 text-teal-600 cursor-pointer transition-colors transition-duration-150 inline-flex align-items-center justify-content-center">
-                            <i className="pi pi-facebook text-2xl    text-teal-600 mr-2"></i>
-                            <span className='mt-1'> Facebook</span>
-                        </button>
-                    </div>
 
                 </div>
             </div>

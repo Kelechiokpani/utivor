@@ -79,7 +79,7 @@ const ResetPassword = ( ) =>{
             <div className="flex">
                 <Navigation_Style className="hidden md:block w-6 bg-no-repeat bg-fill bg-bluee-500 relative"
                     // style={{ backgroundImage: "url('/website/navigation/img.png')", backgroundSize:"cover"  }}>
-                                  style={{ backgroundImage: "url('/image/website/sms2.jpg')"  }}>
+                                  style={{ backgroundImage: "url('/image/website/sms2.jpg')" ,height:"45rem" }}>
                 </Navigation_Style>
 
                 <div className="surface-section w-full md:w-6 p-6 md:p-8">
@@ -114,11 +114,6 @@ const ResetPassword = ( ) =>{
     )
 }
 
-
-const Body_Style = styled.div`
-  background-image:url("../../../public/website/navigation.svg");
-  background-size:cover;
-`;
 
 const ForgotPasswordContainer = styled.div`
     display: flex;

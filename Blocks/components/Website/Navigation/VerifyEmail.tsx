@@ -67,7 +67,7 @@ const VerifyEmail = ( ) =>{
             <div className="flex ">
                 <Navigation_Style className="hidden md:block w-6 bg-no-repeat bg-cover bg-bluee-500 relative"
                     // style={{ backgroundImage: "url('/website/navigation/img.png')", backgroundSize:"cover"  }}>
-                                  style={{ backgroundImage: "url('/image/website/sms2.jpg')"}}
+                                  style={{ backgroundImage: "url('/image/website/sms2.jpg')", height:"45rem"}}
                 >
                 </Navigation_Style>
 

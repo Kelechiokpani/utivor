@@ -98,7 +98,7 @@ const Login = ( ) =>{
             <div className="flex">
                 <Navigation_Style className="hidden md:block w-6 bg-no-repeat bg-fill bg-bluee-500 relative"
                             // style={{ backgroundImage: "url('/website/navigation/img.png')", backgroundSize:"cover"  }}>
-                            style={{ backgroundImage: "url('/image/website/sms2.jpg')"  }}>
+                            style={{ backgroundImage: "url('/image/website/sms2.jpg')" ,height:"45rem" }}>
                 </Navigation_Style>
 
                 <div className="surface-section w-full md:w-6 p-6 md:p-8">
@@ -124,21 +124,6 @@ const Login = ( ) =>{
                             submitButtonText="Contunie"
                             formInputs={inputList}
                         />
-                    </div>
-
-                    <Divider align="center" className="my-3">
-                        <span className="text-900 font-normal text-sm">or Sign up with</span>
-                    </Divider>
-
-                    <div className="flex justify-content-center mt-4">
-                        <button className="p-ripple  lg:w-3  font-medium border-1 border-teal-600 border-round-sm   bg-transparent py-2 px-2 p-component hover:surface-200 active:surface-300 text-teal-600 cursor-pointer transition-colors transition-duration-150 inline-flex align-items-center justify-content-center">
-                            <i className="pi pi-google text-2xl text-teal-600 mr-2"></i>
-                            <span className='mt-1'>Google</span>
-                        </button>
-                        <button className="p-ripple mr-2 ml-4 lg:w-3  font-medium border-1 border-teal-600  border-round-sm  bg-transparent py-2 px-2 p-component hover:surface-200 active:surface-300 text-teal-600 cursor-pointer transition-colors transition-duration-150 inline-flex align-items-center justify-content-center">
-                            <i className="pi pi-facebook text-2xl    text-teal-600 mr-2"></i>
-                            <span className='mt-1'> Facebook</span>
-                        </button>
                     </div>
 
                 </div>
