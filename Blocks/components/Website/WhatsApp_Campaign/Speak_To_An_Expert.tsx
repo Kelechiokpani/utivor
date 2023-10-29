@@ -1,4 +1,5 @@
-import { Button } from "primereact/button";
+"use client"
+
 import Image from "next/image";
 import image from "../../../../public/imagewebsite/whatsapp_campaign/speak_to_an_expert.svg";
 import { useRouter } from "next/navigation";

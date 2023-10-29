@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 
 import image1 from "../../../../public/image/website/sponsored_ads/content_marketing.svg";

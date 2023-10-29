@@ -1,3 +1,5 @@
+"use client"
+
 import HeroImg from "../../../../public/image/website/whatsapp_campaign/iphones.svg";
 import Image from "next/image";
 import { useRouter } from "next/navigation";

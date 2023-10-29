@@ -1,7 +1,8 @@
+"use client"
+
 import styled from "styled-components";
 import {Header_Top, HR_Line} from "../../../ReusedComponent/Text_Typography";
 import Form_Input from "../../../ReusedComponent/Form_Input";
-// import { HR_Line, Header_Top } from "../../ReusedComponent/Text_Typography";
 
 export default function Request_a_Callback() {
   return (

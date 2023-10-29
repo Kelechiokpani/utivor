@@ -1,3 +1,5 @@
+"use client"
+
 import styled from "styled-components";
 import {useRouter} from "next/navigation";
 import {Header_Top, Header_Top_Description} from "../../../ReusedComponent/Text_Typography";

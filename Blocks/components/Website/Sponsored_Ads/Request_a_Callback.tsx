@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import {Header_Top} from "../../../ReusedComponent/Text_Typography";
 import Form_Input from "../../../ReusedComponent/Form_Input";

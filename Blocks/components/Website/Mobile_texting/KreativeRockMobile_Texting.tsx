@@ -1,3 +1,4 @@
+"use client"
 
 import TS1 from "../../../../public/image/website/mobile_texting/TS1.svg";
 import TS2 from "../../../../public/image/website/mobile_texting/TS2.svg";

@@ -1,3 +1,5 @@
+"use client"
+
 import HeroImg from "../../../../public/image/website/mobile_texting/Sales consulting-pana 2.png";
 import Image from "next/image";
 import { useRouter } from "next/navigation";

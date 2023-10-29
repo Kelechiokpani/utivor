@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import brown_bullet from "../../../../public/image/website/whatsapp_campaign/brown_bullet.svg";
 import green_bullet from "../../../../public/image/website/whatsapp_campaign/green_bullet.svg";

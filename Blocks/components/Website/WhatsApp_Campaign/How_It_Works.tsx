@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import image from "../../../../public/image/website/whatsapp_campaign/how_it_works.svg";
 import { useRouter } from "next/navigation";

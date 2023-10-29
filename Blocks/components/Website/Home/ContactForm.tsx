@@ -1,5 +1,5 @@
+"use client"
 import { useState } from "react";
-
 import { InputText } from "primereact/inputtext";
 import { Dropdown } from "primereact/dropdown";
 import { InputTextarea } from "primereact/inputtextarea";

@@ -1,3 +1,4 @@
+"use client"
 import { useState } from "react";
 import {Service} from "../LandingPage/data/data";
 import TogglableLandingCard from "./TogglableLandingCard";

@@ -1,3 +1,5 @@
+"use client"
+
 import HeroImg from "../../../../public/image/website/sponsored_ads/amico.svg";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
