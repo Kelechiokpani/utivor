@@ -91,7 +91,7 @@ const Dashboard = ( )=> {
                                     <div className="text-900 font-medium mb-3 text-xl"> Voice campaign management </div>
                                     <CustomButton
                                         label={`voice`}
-                                        className="custom-blue-button"
+                                        className="capitalize"
                                         icon="add"
                                         onClick={WhatsappRoute}
                                     />
@@ -110,7 +110,7 @@ const Dashboard = ( )=> {
                                     <div className="text-900 font-medium mb-3 text-xl"> Mobile Texting campaign </div>
                                     <CustomButton
                                         label={`Mobile Texting`}
-                                        className="custom-blue-button"
+                                        className="capitalize"
                                         icon="add"
                                         onClick={SmsRoute}
                                     />
@@ -129,7 +129,7 @@ const Dashboard = ( )=> {
                                     <div className="text-900 font-medium mb-3 text-xl"> Two Way (2) Interactive campaign </div>
                                     <CustomButton
                                         label={`whatsapp`}
-                                        className="custom-blue-button"
+                                        className="capitalize"
                                         icon="add"
                                         onClick={WhatsappRoute}
                                     />
@@ -148,7 +148,7 @@ const Dashboard = ( )=> {
                                     <div className="text-900 font-medium mb-3 text-xl"> Custom Questionaire campaign </div>
                                     <CustomButton
                                         label={`Questionaire`}
-                                        className="custom-blue-button"
+                                        className="capitalize"
                                         icon="add"
                                         onClick={WhatsappRoute}
                                     />
