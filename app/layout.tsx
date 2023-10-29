@@ -6,6 +6,9 @@ import 'primeflex/primeflex.css';
 import 'primeicons/primeicons.css';
 import '../styles/layout/layout.scss';
 import '../styles/demo/Demos.scss';
+// import NextTopLoader from 'nextjs-toploader';
+import StyledComponentsRegistry from "../Blocks/utils/lib/styledComponentsRegistry";
+import {DataProvider} from "../Blocks/utils/lib/hooks/DataContext";
 
 interface RootLayoutProps {
     children: React.ReactNode;
@@ -18,9 +21,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 <link id="theme-css" href={`/themes/lara-light-indigo/theme.css`} rel="stylesheet"></link>
             </head>
             <body>
-                <PrimeReactProvider>
+            {/*<NextTopLoader />*/}
+            <StyledComponentsRegistry>
+                <DataProvider>
                     <LayoutProvider>{children}</LayoutProvider>
-                </PrimeReactProvider>
+                </DataProvider>
+            </StyledComponentsRegistry>
             </body>
         </html>
     );

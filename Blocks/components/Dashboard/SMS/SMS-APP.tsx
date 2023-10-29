@@ -1,8 +1,7 @@
 "use client"
-
 import React, {useEffect, useState} from "react"
 import Image from "next/image";
-import SMSImage from  "../../../public/dashboard/SMS/img.png"
+import SMSImage from  "../../../../public/image/dashboard/SMS/img.png"
 import {useRouter} from "next/navigation";
 import {DataTable} from "primereact/datatable";
 import {Column} from "primereact/column";

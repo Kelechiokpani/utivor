@@ -1,4 +1,3 @@
-"use client"
 import {FooterStyle} from "../../../../styles/Styled_component/StyledComponent";
 
 const Footer = ( )=>{
