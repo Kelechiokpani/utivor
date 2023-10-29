@@ -1,11 +1,12 @@
+'use client'
 import { Metadata } from 'next';
-import Layout from '../../../layout/layout';
+// import Layout from '../../../layout/layout';
 
 interface AppLayoutProps {
     children: React.ReactNode;
 }
 
-export const metadata: Metadata = {
+ const metadata: Metadata = {
     title: 'PrimeReact Sakai',
     description: 'The ultimate collection of design-agnostic, flexible and accessible React UI Components.',
     robots: { index: false, follow: false },

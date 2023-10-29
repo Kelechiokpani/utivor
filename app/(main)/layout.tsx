@@ -1,9 +1,10 @@
+'use client'
 import { Metadata } from 'next';
 import React from 'react';
 import Footer from "../../Blocks/components/Website/Navigation/Footer";
 import NavigationMenu from "../../Blocks/components/Website/Navigation/NavigationMenu";
 import StyledComponentsRegistry from "../../Blocks/utils/lib/styledComponentsRegistry";
-import {DataProvider} from "../../Blocks/utils/lib/hooks/DataContext";
+
 
 interface SimpleLayoutProps {
     children: React.ReactNode;
@@ -21,11 +22,13 @@ const SimpleLayout = ({ children, showNavBar = false, showFooter = false, }: any
             <head>
                 <link id="theme-css" href={`/themes/lara-light-indigo/theme.css`} rel="stylesheet"></link>
             </head>
+            <StyledComponentsRegistry>
                     <React.Fragment>
-                    {showNavBar && <NavigationMenu />}
-                    {children}
-                    {showFooter && <Footer />}
+                        {showNavBar && <NavigationMenu />}
+                        {children}
+                        {showFooter && <Footer />}
                     </React.Fragment>
+            </StyledComponentsRegistry>
             </html>
     );
 }

@@ -1,3 +1,4 @@
+"use client"
 import React, { useState, createContext } from 'react';
 import { ChildContainerProps, MenuContextProps } from '../../types/types';
 

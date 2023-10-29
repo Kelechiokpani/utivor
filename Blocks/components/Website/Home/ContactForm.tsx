@@ -6,7 +6,7 @@ import { InputTextarea } from "primereact/inputtextarea";
 import { useRouter } from "next/navigation";
 import "react-phone-number-input/style.css";
 import styled from "styled-components";
-import PhoneInput from "react-phone-input-2";
+// import PhoneInput from "react-phone-input-2";
 import {CustomButton} from "../../../ReusedComponent/Styled_Button";
 
 // import PhoneInput from "react-phone-number-input/input";

@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import SimpleLayout from "../layout";
 import FeedBack from "../../../Blocks/components/Website/Pricing/FeedBack";
 

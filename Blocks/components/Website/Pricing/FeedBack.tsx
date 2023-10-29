@@ -1,4 +1,3 @@
-"use client"
 import Message from "../../../../public/image/website/pricing/msg.png"
 import Image from "next/image";
 import {useRouter} from "next/navigation";
