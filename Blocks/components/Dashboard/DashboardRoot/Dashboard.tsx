@@ -9,10 +9,12 @@ import question from "../../../../public/image/dashboard/Home/questionnaire.svg"
 import Image from "next/image";
 import {useRouter} from "next/navigation";
 import {CustomButton} from "../../../ReusedComponent/Styled_Button";
+import {Button} from "primereact/button";
 
 
 
-const Dashboard = ( )=> {
+const
+    Dashboard = ( )=> {
 
     const router = useRouter();
     const WhatsappRoute = () => {
@@ -128,7 +130,7 @@ const Dashboard = ( )=> {
                                 <div className="py-6 px-3 flex flex-column align-items-start">
                                     <div className="text-900 font-medium mb-3 text-xl"> Two Way (2) Interactive campaign </div>
                                     <CustomButton
-                                        label={`whatsapp`}
+                                        label={`two way texting`}
                                         className="capitalize"
                                         icon="add"
                                         onClick={WhatsappRoute}

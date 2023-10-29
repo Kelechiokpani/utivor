@@ -4,6 +4,7 @@ import React from 'react';
 import Footer from "../../Blocks/components/Website/Navigation/Footer";
 import NavigationMenu from "../../Blocks/components/Website/Navigation/NavigationMenu";
 import StyledComponentsRegistry from "../../Blocks/utils/lib/styledComponentsRegistry";
+// import {useRouter} from "next/navigation";
 
 
 interface SimpleLayoutProps {
@@ -18,20 +19,21 @@ interface SimpleLayoutProps {
 
 const SimpleLayout = ({ children, showNavBar = false, showFooter = false, }: any) => {
     return (
-            <html>
-            <head>
-                <link id="theme-css" href={`/themes/lara-light-indigo/theme.css`} rel="stylesheet"></link>
-            </head>
-                {/*<body>*/}
+            // <html>
+            // <head>
+            //     <link id="theme-css" href={`/themes/lara-light-indigo/theme.css`} rel="stylesheet"></link>
+            // </head>
+            //     <body>
                     <StyledComponentsRegistry>
-                        {/*        <React.Fragment>*/}
+                        <React.Fragment>
                         {showNavBar && <NavigationMenu />}
                              {children}
                         {showFooter && <Footer />}
-                        {/*</React.Fragment>*/}
+                        </React.Fragment>
                     </StyledComponentsRegistry>
-                {/*</body>*/}
-            </html>
+
+            //     </body>
+            // </html>
     );
 }
 

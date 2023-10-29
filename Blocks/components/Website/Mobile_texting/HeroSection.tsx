@@ -1,12 +1,11 @@
 "use client"
-
 import HeroImg from "../../../../public/image/website/mobile_texting/Sales consulting-pana 2.png";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import styled from "styled-components";
 import {Header_Span, Header_Span_Description, Header_Span_sub} from "../../../ReusedComponent/Text_Typography";
 import {CustomButton} from "../../../ReusedComponent/Styled_Button";
 import Loading from "../../../ReusedComponent/Bounce_Loader";
+import {useRouter} from "next/navigation";
 
 
 
@@ -15,7 +14,8 @@ const HeroSection = () => {
   const router = useRouter();
 
   const NewRoute = () => {
-    router.push("/sign_up");
+    router.push("/register");
+    console.log("clicked")
   };
 
   return (
@@ -35,7 +35,7 @@ const HeroSection = () => {
           <Header_Span_Description label="Send and receive text messages using our easy-to-use platform" />
           <CustomButton
             label={`Get Started`}
-            className="custom-blue-button"
+            className="capitalize"
             icon="add"
             onClick={NewRoute}
           />
@@ -49,7 +49,7 @@ const HeroSection = () => {
               src={HeroImg}
               alt="hero-1"
               // className="md:ml-auto block "
-              className="md:ml-auto block md:h-full w-full h-full"
+              className="md:ml-auto block w-full"
             />
           }
         />

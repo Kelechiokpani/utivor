@@ -48,7 +48,7 @@ const Container = styled.div`
   min-height: 800px;
   padding: 2rem 4rem;
   background-color: #f9fcff;
-  background-image: url("/layout/images/page-svgs/section-3-bg.svg");
+  background-image: url("/image/website/landing_page/more/section-3-bg.svg");
   background-size: cover;
 `;
 
@@ -64,7 +64,7 @@ const ImageDiv = styled.div`
   padding: 0;
   height: 18rem;
   cursor: pointer;
-  background-image: url("/website/landing_page/gen-z-rafiki.svg");
+  background-image: url("/image/website/landing_page/more/gen-z-rafiki.svg");
   background-position: center;
   background-repeat: no-repeat;
   margin: 0 auto; /* Center horizontally */

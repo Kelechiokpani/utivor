@@ -1,9 +1,6 @@
 "use client"
-
-
 import {Container} from "../../../../styles/Styled_component/StyledComponent";
 import {Header_Top} from "../../../ReusedComponent/Text_Typography";
-
 const UseCaseItems = [
     {
         id:1,
@@ -84,8 +81,6 @@ const UseCase = ( )=>{
                         </div>
                     </div>
                 ))}
-
-
             </div>
         </div>
         </Container>

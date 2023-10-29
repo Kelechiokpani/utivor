@@ -20,7 +20,7 @@ const CardContainer = styled.div<{ $isEven?: boolean }>`
   cursor: pointer;
   @media (min-width: 992px) {
     ${(props) =>
-      props.$isEven ? "padding-right: 20px;" : "padding-right: 0;"} \
+      props.$isEven ? "padding-right: 20px;" : "padding-right: 0;"} 
     width: 50%;
     margin: 4rem 0;
   }
@@ -32,21 +32,24 @@ const CardContainer = styled.div<{ $isEven?: boolean }>`
   }
 `;
 
-const CardWrapper = styled.div<{ isSelected: boolean }>`
+// const CardWrapper = styled.div<{ isselected: boolean }>`
+const CardWrapper = styled.div`
   min-height: 200px;
   padding: 0.75rem;
   padding-left: 0rem;
-  border: 3px solid
-    ${(props) => (props.isSelected ? "var(--tw-primary-color)" : "transparent")};
   border-radius: 16px;
   display: flex;
   flex-direction: column;
   @media (min-width: 992px) {
     min-height: 200px;
   }
-  background-color: ${(props) =>
-    props.isSelected ? "#ffffff" : "transparent"};
+  
 `;
+//   border: 3px solid
+//     ${(props) => (props.isselected ? "var(--tw-primary-color)" : "transparent")};
+//   background-color: ${(props) =>
+//     props.isselected ? "#ffffff" : "transparent"};
+
 
 const CardContent = styled.div`
   padding: 0.75rem 0;
@@ -54,7 +57,8 @@ const CardContent = styled.div`
   flex-direction: row;
 `;
 
-const CardImage = styled.div<{ isSelected: boolean }>`
+//const CardImage = styled.div<{ isselected: boolean }>`
+const CardImage = styled.div`
   flex: 0 0 auto;
   height: 6rem;
   margin-top: 1rem;
@@ -63,13 +67,14 @@ const CardImage = styled.div<{ isSelected: boolean }>`
   flex-direction: column;
   justify-content: center;
   padding-left: 1rem;
-  border-left: ${(props) =>
-    props.isSelected ? `4px solid var(--tw-primary-color)` : "none"};
+  
   img {
     max-height: 100%;
     max-width: 100%;
   }
 `;
+// border-left: ${(props) =>
+//     props.isselected ? `4px solid var(--tw-primary-color)` : "none"};
 
 const CardInfo = styled.div`
   flex: 1 1 auto;
@@ -93,9 +98,11 @@ const TogglableLandingCard: React.FC<TogglableLandingCardProps> = (props) => {
 
   return (
     <CardContainer $isEven={(idx + 1) % 2 === 0} onClick={handleClick} className='p-1'>
-      <CardWrapper isSelected={selected}>
+      {/*<CardWrapper isselected={selected}>*/}
+      <CardWrapper>
         <CardContent>
-          <CardImage isSelected={selected}>
+          <CardImage>
+          {/*<CardImage isselected={selected}>*/}
             <Image src={icon} alt="KreativeRock Digital Logo" />
           </CardImage>
           <CardInfo>

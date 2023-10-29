@@ -36,7 +36,6 @@ const StyledButton = styled.button`
   justify-content: center;
   font-style: normal;
   font-weight: 500;
-  font-family: Lora;
   font-size: 16px;
   line-height: normal;
   text-transform: uppercase;

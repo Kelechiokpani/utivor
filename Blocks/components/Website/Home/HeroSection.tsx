@@ -2,14 +2,27 @@
 import styled from "styled-components";
 import {CustomButton} from "../../../ReusedComponent/Styled_Button";
 import {Header_Top_Span} from "../../../ReusedComponent/Text_Typography";
+import {useRouter} from "next/navigation";
 
+//    src="/image/website/landing_page/hero-graphic-2.svg"
 
-
+import H1 from "../../../../public/image/website/landing_page/hero-graphic-1.svg"
+import H2 from "../../../../public/image/website/landing_page/hero-graphic-2.svg"
+import Image from "next/image";
 const HeroSection = () => {
+
+  const router = useRouter();
+
+  const NewRoute = () => {
+    router.push("/register");
+    console.log("clicked")
+  };
+
+
   return (
     <Container
       id="hero"
-      className="flex flex-column pt-4 px-2 lg:px-8 overflow-hidden">
+      className="flex flex-column pt-4 px-2 lg:px-8 ">
       <div className="mx-4 md:mx-8 mt-0 md:mt-4 md:pt-6  text-center">
         <Heading className="text-2xl md:text-4xl font-bold text-gray-900 line-height-2">
           Take Control with KreactiveRock Technology
@@ -18,25 +31,27 @@ const HeroSection = () => {
           label="Our support is top-notch, get started now!"
           className="text-2xl"
         />
-        <ButtonDiv className="flex justify-content-center">
-          <CustomButton
-            label="Get Started"
-            className="text-xl border-none mt-3 capitalize font-normal line-height-3 px-3 text-white"
-            icon="add"
-          />
-        </ButtonDiv>
+
       </div>
       <div className="flex justify-content-between mt-4 md:-mt-7">
         <div className="flex justify-content-center md:justify-content-end">
-          <img
-            src="/image/website/landing_page/hero-graphic-1.svg"
+          <Image
+            src={H1}
             alt="Hero Image"
             className="w-9 md:w-auto"
           />
         </div>
+        <ButtonDiv className="flex justify-content-center">
+          <CustomButton
+              label="Get Started"
+              className="text-xl border-none mt-3 capitalize cursor-pointer font-normal line-height-3 px-3 text-white"
+              icon="add"
+              onClick={NewRoute}
+          />
+        </ButtonDiv>
         <div className="flex justify-content-center md:justify-content-end">
-          <img
-              src="/image/website/landing_page/hero-graphic-2.svg"
+          <Image
+              src={H2}
             alt="Hero Image"
             className="w-9 md:w-auto"
           />
@@ -78,8 +93,8 @@ const Heading = styled.h1`
 
 const ButtonDiv = styled.div`
   width: 12.7rem;
-  margin: 0 auto;
-  margin-top: 2rem;
+  //margin: 10rem auto;
+  margin-top: 5rem;
 
   @media (min-width: 768px) {
     width: 23rem;
