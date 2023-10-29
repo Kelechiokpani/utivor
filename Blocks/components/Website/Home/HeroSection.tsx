@@ -1,4 +1,4 @@
-"use client"
+
 import styled from "styled-components";
 import {CustomButton} from "../../../ReusedComponent/Styled_Button";
 import {Header_Top_Span} from "../../../ReusedComponent/Text_Typography";

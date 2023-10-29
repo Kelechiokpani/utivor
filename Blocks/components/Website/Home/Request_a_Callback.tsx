@@ -1,4 +1,3 @@
-"use client"
 
 import styled from "styled-components";
 import {Header_Top, HR_Line} from "../../../ReusedComponent/Text_Typography";

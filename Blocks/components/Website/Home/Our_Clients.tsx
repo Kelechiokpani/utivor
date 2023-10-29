@@ -1,4 +1,4 @@
-"use client"
+
 import React from "react";
 import styled from "styled-components";
 import {Header_Top, Header_Top_Span, HR_Line} from "../../../ReusedComponent/Text_Typography";
