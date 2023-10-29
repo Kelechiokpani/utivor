@@ -9,8 +9,7 @@ const HeroSection = () => {
   return (
     <Container
       id="hero"
-      className="flex flex-column pt-4 px-2 lg:px-8 overflow-hidden"
-    >
+      className="flex flex-column pt-4 px-2 lg:px-8 overflow-hidden">
       <div className="mx-4 md:mx-8 mt-0 md:mt-4 md:pt-6  text-center">
         <Heading className="text-2xl md:text-4xl font-bold text-gray-900 line-height-2">
           Take Control with KreactiveRock Technology

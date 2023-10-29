@@ -22,12 +22,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <head>
                 <link id="theme-css" href={`/themes/lara-light-indigo/theme.css`} rel="stylesheet"></link>
             </head>
-            <body>
+            {/*<body>*/}
             {/*<NextTopLoader />*/}
             <StyledComponentsRegistry>
                     <LayoutProvider>{children}</LayoutProvider>
             </StyledComponentsRegistry>
-            </body>
+            {/*</body>*/}
         </html>
     );
 }

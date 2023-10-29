@@ -22,13 +22,15 @@ const SimpleLayout = ({ children, showNavBar = false, showFooter = false, }: any
             <head>
                 <link id="theme-css" href={`/themes/lara-light-indigo/theme.css`} rel="stylesheet"></link>
             </head>
-            {/*<StyledComponentsRegistry>*/}
-                    <React.Fragment>
+                {/*<body>*/}
+                    <StyledComponentsRegistry>
+                        {/*        <React.Fragment>*/}
                         {showNavBar && <NavigationMenu />}
-                        {children}
+                             {children}
                         {showFooter && <Footer />}
-                    </React.Fragment>
-            {/*</StyledComponentsRegistry>*/}
+                        {/*</React.Fragment>*/}
+                    </StyledComponentsRegistry>
+                {/*</body>*/}
             </html>
     );
 }
