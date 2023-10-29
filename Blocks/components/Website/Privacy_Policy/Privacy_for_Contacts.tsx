@@ -1,4 +1,4 @@
-import { Header_Span } from "../../ReusedComponent/Text_Typography";
+import {Header_Span} from "../../../ReusedComponent/Text_Typography";
 
 const Information_We_Collect_Items = [
   {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Header_Top } from "../../ReusedComponent/Text_Typography";
+import {Header_Top} from "../../../ReusedComponent/Text_Typography";
 
 const Copyright_and_Trademarks_Items = [
   `We, together with our licensors, own and control all the copyright and 

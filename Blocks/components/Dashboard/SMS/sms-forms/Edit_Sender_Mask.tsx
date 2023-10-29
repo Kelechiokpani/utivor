@@ -1,6 +1,6 @@
 import {InputText} from "primereact/inputtext";
-import {CustomButton} from "../../../ReusedComponent/Styled_Button";
 import React from "react";
+import {CustomButton} from "../../../../ReusedComponent/Styled_Button";
 
 
 const Edit_Sender_Mask =({setVisible,selectedItemId,selectedItemName}:any)=>{
@@ -24,7 +24,7 @@ const Edit_Sender_Mask =({setVisible,selectedItemId,selectedItemName}:any)=>{
                 />
                 <CustomButton
                     label={`Confirm`}
-                    className="custom-blue-button mt-3 w-4 h-3rem capitalize"
+                    className=" mt-3 w-4 h-3rem capitalize"
                     icon="add"
                     onClick={() => setVisible(false)}
                 />

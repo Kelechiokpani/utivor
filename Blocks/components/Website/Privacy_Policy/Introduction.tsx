@@ -1,6 +1,5 @@
 import React from "react";
-import { Header_Span } from "../../ReusedComponent/Text_Typography";
-import styled from "styled-components";
+import {Header_Span} from "../../../ReusedComponent/Text_Typography";
 
 const Introduction = () => {
   return (

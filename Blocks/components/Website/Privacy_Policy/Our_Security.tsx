@@ -1,5 +1,5 @@
 import React from "react";
-import { Header_Span } from "../../ReusedComponent/Text_Typography";
+import {Header_Span} from "../../../ReusedComponent/Text_Typography";
 
 const Our_Security = () => {
   return (

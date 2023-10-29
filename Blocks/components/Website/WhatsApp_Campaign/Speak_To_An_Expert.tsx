@@ -1,15 +1,10 @@
 import { Button } from "primereact/button";
 import Image from "next/image";
-
-import image from "../../../public/website/whatsapp_campaign/speak_to_an_expert.svg";
+import image from "../../../../public/imagewebsite/whatsapp_campaign/speak_to_an_expert.svg";
 import { useRouter } from "next/navigation";
 import styled from "styled-components";
-import {
-  Header_Span,
-  Header_Span_Description,
-  Header_Span_sub,
-} from "../../ReusedComponent/Text_Typography";
-import { CustomButton } from "../../ReusedComponent/Styled_Button";
+import {Header_Span, Header_Span_Description} from "../../../ReusedComponent/Text_Typography";
+import {CustomButton} from "../../../ReusedComponent/Styled_Button";
 
 const Speak_To_An_Expert = () => {
   const router = useRouter();

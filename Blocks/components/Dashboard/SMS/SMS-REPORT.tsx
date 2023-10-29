@@ -1,13 +1,9 @@
 import React, {useEffect, useState} from "react"
-import {SmsReportData, TotalSmsReportBar} from "../../../types/dashboard";
 import {useRouter} from "next/navigation";
-import {GeneralService} from "../../../public/demo/walletDemo";
 import {DataTable} from "primereact/datatable";
 import {Column} from "primereact/column";
-import {Button} from "primereact/button";
-import {Menu} from "primereact/menu";
-
-
+import {GeneralService} from "../../../../public/DemoData";
+import {SmsReportData, TotalSmsReportBar} from "../../../../types/dashboard";
 
 const SMS_REPORT = ( )=>{
 

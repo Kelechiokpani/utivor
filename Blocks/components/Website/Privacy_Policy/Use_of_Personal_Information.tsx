@@ -1,5 +1,5 @@
 import React from "react";
-import { Header_Span } from "../../ReusedComponent/Text_Typography";
+import {Header_Span} from "../../../ReusedComponent/Text_Typography";
 
 const listItems = [
   `To bill and collect money owed to us by you to perform our contact with you 

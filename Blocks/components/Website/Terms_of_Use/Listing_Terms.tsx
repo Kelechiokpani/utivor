@@ -1,5 +1,5 @@
 import React from "react";
-import { Header_Top } from "../../ReusedComponent/Text_Typography";
+import {Header_Top} from "../../../ReusedComponent/Text_Typography";
 
 const Listing_Terms_Items = [
   `You will undergo the process of filling the questionnaire set-up form with 

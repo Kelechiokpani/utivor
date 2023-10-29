@@ -1,5 +1,5 @@
 import React from "react";
-import { Header_Span } from "../../ReusedComponent/Text_Typography";
+import {Header_Span} from "../../../ReusedComponent/Text_Typography";
 
 const listItems = [
   `Whether we have a legal or contractual need to retain the data.`,

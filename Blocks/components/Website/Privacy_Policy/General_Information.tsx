@@ -1,8 +1,5 @@
 import React from "react";
-import {
-  Header_Span,
-  Header_Span_sub,
-} from "../../ReusedComponent/Text_Typography";
+import {Header_Span} from "../../../ReusedComponent/Text_Typography";
 
 const listItems = [
   `Our service providers: Sometimes, we share your information with our 

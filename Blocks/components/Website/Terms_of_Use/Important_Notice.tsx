@@ -1,5 +1,5 @@
 import React from "react";
-import { Header_Span, Header_Top } from "../../ReusedComponent/Text_Typography";
+import {Header_Top} from "../../../ReusedComponent/Text_Typography";
 
 const Important_Notice = () => {
   return (

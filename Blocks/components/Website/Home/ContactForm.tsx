@@ -4,10 +4,10 @@ import { InputText } from "primereact/inputtext";
 import { Dropdown } from "primereact/dropdown";
 import { InputTextarea } from "primereact/inputtextarea";
 import { useRouter } from "next/navigation";
-import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import styled from "styled-components";
-import { CustomButton } from "../../ReusedComponent/Styled_Button";
+import PhoneInput from "react-phone-input-2";
+import {CustomButton} from "../../../ReusedComponent/Styled_Button";
 
 // import PhoneInput from "react-phone-number-input/input";
 
@@ -76,20 +76,19 @@ const Form_Input = () => {
         />
       </div>
 
-      <div className="field mb-4 col-12 md:col-12">
-        <label htmlFor="Email" className="font-medium text-900">
-          Phone number
-        </label>
-        <PhoneInput
-          country="NG"
-          defaultCountry="NG"
-          name="phone"
-          placeholder="phone number"
-          onChange={setValue}
-          className="w-full"
-          style={{ height: "55px" }}
-        />
-      </div>
+      {/*<div className="field mb-4 col-12 md:col-12">*/}
+      {/*  <label htmlFor="Email" className="font-medium text-900">*/}
+      {/*    Phone number*/}
+      {/*  </label>*/}
+      {/*  <PhoneInput*/}
+      {/*    country="NG"*/}
+      {/*    name="phone"*/}
+      {/*    placeholder="phone number"*/}
+      {/*    onChange={setValue}*/}
+      {/*    className="w-full"*/}
+      {/*    style={{ height: "55px" }}*/}
+      {/*  />*/}
+      {/*</div>*/}
 
       <div className="field mb-4 col-12">
         <label htmlFor="bio1" className="font-medium text-900">
@@ -106,7 +105,7 @@ const Form_Input = () => {
       <div className="col-12">
         <CustomButton
           label={`SUMBIT`}
-          className="custom-blue-button w-12"
+          className=" w-12"
           icon="add"
           onClick={NewRoute}
         />

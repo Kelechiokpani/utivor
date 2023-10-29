@@ -1,18 +1,15 @@
 import React, {useEffect, useState} from "react"
 import Image from "next/image";
 import SMSImage from  "../../../public/dashboard/SMS/img.png"
-import {CustomButton} from "../../ReusedComponent/Styled_Button";
 import {useRouter} from "next/navigation";
 import {DataTable} from "primereact/datatable";
 import {Column} from "primereact/column";
-import {GeneralService} from "../../../public/demo/walletDemo";
-import {SenderMask, SmsReportData} from "../../../types/dashboard";
 import { Dialog } from 'primereact/dialog';
-import {InputText} from "primereact/inputtext";
-import {Checkbox} from "primereact/checkbox";
-import {Button} from "primereact/button";
 import Create_Sender_Mask from "./sms-forms/Create_Sender_Mask";
 import Edit_Sender_Mask from "./sms-forms/Edit_Sender_Mask";
+import {GeneralService} from "../../../../public/DemoData";
+import {SenderMask} from "../../../../types/dashboard";
+import {CustomButton} from "../../../ReusedComponent/Styled_Button";
 
 
 
@@ -73,7 +70,7 @@ const Sms_App = ()=> {
                     <div className="relative w-full xl:w-30rem">
                         <CustomButton
                             label={`Request Sender Mask`}
-                            className="custom-blue-button mt-7 capitalize"
+                            className=" mt-7 capitalize"
                             icon="add"
                             onClick={handleButtonClick}
                         />

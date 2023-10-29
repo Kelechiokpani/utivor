@@ -1,5 +1,5 @@
 import React from "react";
-import { Header_Top } from "../../ReusedComponent/Text_Typography";
+import {Header_Top} from "../../../ReusedComponent/Text_Typography";
 
 const Data_Privacy_Items = [
   `End-Users agree to processing of their personal data in accordance with the 

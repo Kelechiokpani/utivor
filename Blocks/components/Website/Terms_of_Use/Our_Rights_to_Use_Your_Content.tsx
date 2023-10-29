@@ -1,5 +1,5 @@
 import React from "react";
-import { Header_Top } from "../../ReusedComponent/Text_Typography";
+import {Header_Top} from "../../../ReusedComponent/Text_Typography";
 
 const Our_Rights_to_Use_Your_Content_Items = [
   `You hereby waive all your moral rights in your content to the maximum 

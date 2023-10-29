@@ -1,5 +1,5 @@
 import React from "react";
-import { Header_Top } from "../../ReusedComponent/Text_Typography";
+import {Header_Top} from "../../../ReusedComponent/Text_Typography";
 
 const Use_of_Website_Items_1 = [
   `View pages from our website in a web browser.`,

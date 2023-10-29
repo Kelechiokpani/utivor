@@ -1,5 +1,5 @@
 import React from "react";
-import { Header_Top } from "../../ReusedComponent/Text_Typography";
+import {Header_Top} from "../../../ReusedComponent/Text_Typography";
 
 const Returns_and_Refunds_Items = [
   `All sales are final! As a result, KreativeRock does not offer returns and 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Header_Span } from "../../ReusedComponent/Text_Typography";
+import {Header_Span} from "../../../ReusedComponent/Text_Typography";
 
 const listItems = [
   `In order to send an email campaign or use certain features in your account, 

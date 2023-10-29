@@ -1,4 +1,4 @@
-import { Header_Span } from "../../ReusedComponent/Text_Typography";
+import {Header_Span} from "../../../ReusedComponent/Text_Typography";
 
 const Privacy_for_Subscribers = () => {
   return (

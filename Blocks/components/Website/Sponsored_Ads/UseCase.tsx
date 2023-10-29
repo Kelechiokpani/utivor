@@ -1,16 +1,12 @@
 "use client";
 import styled from "styled-components";
-import F1 from "../../../public/website/mobile_texting/F1.svg";
-import F2 from "../../../public/website/mobile_texting/F2.svg";
-import F3 from "../../../public/website/mobile_texting/F3.svg";
-import F4 from "../../../public/website/mobile_texting/F4.svg";
-import F5 from "../../../public/website/mobile_texting/F5.svg";
-import F6 from "../../../public/website/mobile_texting/F6.svg";
-import { Fragment } from "react";
-import {
-  Header_Top,
-  Header_Top_Description,
-} from "../../ReusedComponent/Text_Typography";
+import F1 from "../../../../public/image/website/mobile_texting/F1.svg";
+import F2 from "../../../../public/image/website/mobile_texting/F2.svg";
+import F3 from "../../../../public/image/website/mobile_texting/F3.svg";
+import F4 from "../../../../public/image/website/mobile_texting/F4.svg";
+import F5 from "../../../../public/image/website/mobile_texting/F5.svg";
+import F6 from "../../../../public/image/website/mobile_texting/F6.svg";
+import {Header_Top} from "../../../ReusedComponent/Text_Typography";
 
 const UseCaseItems = [
   {

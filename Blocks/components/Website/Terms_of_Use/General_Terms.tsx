@@ -1,5 +1,5 @@
 import React from "react";
-import { Header_Top } from "../../ReusedComponent/Text_Typography";
+import {Header_Top} from "../../../ReusedComponent/Text_Typography";
 
 const General_Terms_Items_1 = [
   `We do not confirm the identity of all account holders on KreativeRock 

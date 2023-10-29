@@ -1,4 +1,4 @@
-import { Header_Span } from "../../ReusedComponent/Text_Typography";
+import {Header_Span} from "../../../ReusedComponent/Text_Typography";
 
 const Personal_Information_Items = [
   `Business contact information (such as your name, phone number, email address and country);`,

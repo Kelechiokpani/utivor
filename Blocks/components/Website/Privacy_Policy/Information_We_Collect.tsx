@@ -1,7 +1,4 @@
-import {
-  Header_Span,
-  Header_Span_sub,
-} from "../../ReusedComponent/Text_Typography";
+
 
 const listItems1 = [
   `Business contact information (such as your name, job title, organization, 

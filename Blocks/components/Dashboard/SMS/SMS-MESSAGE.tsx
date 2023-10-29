@@ -5,8 +5,8 @@ import React, {useRef, useState} from "react";
 import {RadioButton} from "primereact/radiobutton";
 import {InputTextarea} from "primereact/inputtextarea";
 import { Calendar } from 'primereact/calendar';
-import {CustomButton} from "../../ReusedComponent/Styled_Button";
 import {Toast} from "primereact/toast";
+import {CustomButton} from "../../../ReusedComponent/Styled_Button";
 
 
 
@@ -147,7 +147,7 @@ const SMS_MESSAGE = ( )=>{
                             <div className="relative w-full flex mt-5">
                                 <CustomButton
                                     label={`Submit`}
-                                    className="custom-blue-button mt-3 w-4 h-3rem capitalize"
+                                    className=" mt-3 w-4 h-3rem capitalize"
                                     icon="add"
                                     // onClick={WhatsappRoute}
                                 />
