@@ -50,7 +50,7 @@ const inputList: Array<IFormInput> = [
         label: 'Password'
     },
     {
-        name: 'Referral',
+        name: 'referral',
         as: TextInput,
         format: (value) => value.toLowerCase().replace(/\s/g, ''),
         options: { inputMode: 'text', className: 'w-full md:w-64 lg:w-96 mb-3' },
@@ -90,6 +90,7 @@ const Register = ( ) =>{
         // });
     };
 
+
     // const { handleLogin, error, data, isLoading } = useLogin({
     //     onComplete: (data:any) => {
     //         router.replace('/');
@@ -122,7 +123,7 @@ const Register = ( ) =>{
                         <CustomForm
                             removeRestButton
                             enableReinitialize
-                            initialValues={{ email: '', password: '' }}
+                            initialValues={{ fullName:' ',email: '', password: '',phone:'' , referral:''}}
                             // validationSchema={schema}
                             onSubmitFunction={loginAdmin}
                             // loading={isLoading}

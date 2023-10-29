@@ -54,13 +54,14 @@ const HeroSection = () => {
           }
         />
       </div>
+
     </Container>
   );
 };
 
 const Container = styled.div`
   position: relative;
-  height: 40rem;
+  height: 42rem;
   //background-image:url("../../../public/website/bg.svg");
   background-size: cover;
   background: linear-gradient(to right, #e7fffb, #ffdaa08c, #e7fffb);

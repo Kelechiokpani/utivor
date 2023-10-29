@@ -1790,7 +1790,7 @@
   border-radius: 6px;
 }
 .p-button:enabled:hover, .p-button:not(button):not(a):not(.p-disabled):hover {
-  background: transparent;
+  /*background: transparent;*/
   color: #ffffff;
   border:none;
 }
