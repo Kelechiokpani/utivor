@@ -105,7 +105,7 @@ const Register = ( ) =>{
 
     return(
         <>
-            <div className="flex h-full bg-cover overflow-hidden">
+            <div className="flex h-full bg-cover">
                 <Navigation_Style className="hidden md:block md:w-6  bg-no-repeat bg-cover bg-bluee-500 relative"
                     // style={{ backgroundImage: "url('/website/navigation/img.png')", backgroundSize:"cover"  }}>
                                   style={{ backgroundImage: "url('/image/website/img_1.png')", height:'63rem' }}
