@@ -116,7 +116,7 @@ const Form_Input = () => {
 
 export const Forms_Style = styled.div`
   .p-inputtext:enabled:hover {
-    border-color: transparent;
+    border-color: #495057;
   }
 
   .p-inputtext:enabled:focus {
