@@ -1,5 +1,3 @@
-
-
 export interface SenderMask {
     senderId: string;
     senderMask: string;
@@ -7,7 +5,6 @@ export interface SenderMask {
     date: string;
     status: string;
 }
-
 
 export interface TotalSmsReportBar {
     sent: string;
@@ -28,7 +25,6 @@ export interface SmsReportData {
     finishingTime: string;
 }
 
-
 export interface Wallet {
     id: string;
     transactionId: string;
@@ -38,7 +34,6 @@ export interface Wallet {
     gateway: string;
     date: string;
 }
-
 
 export interface ContactGroup {
     id: string;
@@ -52,4 +47,13 @@ export interface ContactGroup {
             date: string;
         }
     ]
+}
+
+
+
+//QUESTIONNAIRE
+export interface QuestionnaireCampaign {
+    id: string;
+    name: string;
+    date: string;
 }

@@ -6,6 +6,7 @@ import { LayoutContext } from "./context/layoutcontext";
 import { MenuProvider } from "./context/menucontext";
 import { AppMenuItem } from "../types/types";
 import {useRouter, usePathname, } from "next/navigation";
+import {MdAccountBalance} from "react-icons/md";
 
 type SubMenuItem = {
     label: string;
@@ -37,32 +38,26 @@ const getSelectedRootRoute = (path:any) => {
     return match ? match[1] : "sms";
 };
 
+let A =  <MdAccountBalance/>
 const getMenuModel = (rootRoute:any) => {
     const menuModels:MenuModels = {
         sms: [
             {
                 label: "mobile texting",
                 items: [
-                    { label: "SMS APP", icon: "pi pi-fw pi-home", to: "/home/sms" , id:1},
-                    { label: "Bulk Message", icon: "pi pi-fw pi-home", to: "/home/sms/sendsms", id:12 },
-                    { label: "Sending record", icon: "pi pi-fw pi-home", to: "/home/sms/smsreport", id:15 },
-                    { label: "Task Status", icon: "pi pi-fw pi-home", to: "/home/sms/sendsms", id:13 },
-                    { label: "Task Queue", icon: "pi pi-fw pi-home", to: "/home/sms/sakai", id:14 },
-                    { label: "Analytics", icon: "pi pi-fw pi-home", to: "/home/sms/sakai", id:16 },
+                    { label: "Sender Mask", icon:"pi pi-telegram", to: "/home/sms" , id:1},
+                    { label: "Bulk Message", icon: "pi pi-whatsapp", to: "/home/sms/sendsms", id:12 },
+                    { label: "Sending record", icon: "pi pi-volume-down", to: "/home/sms/report", id:15 },
                 ],
             },
         ],
         interactiveSms: [
             {
-                label: "interactive Sms",
+                label: "interactive sms",
                 items: [
-                    { label: "chat History", icon: "pi pi-fw pi-home", to: "/home/interactiveSms" , id:1},
-                    { label: "Questionnaire", icon: "pi pi-fw pi-home", to: "/home/interactiveSms/sakai" , id:2,
-                        items: [
-                            { label: "create New", icon: "pi pi-fw pi-home", to: "/home/interactiveSms" , id:1},
-                            { label: "Draft", icon: "pi pi-fw pi-home", to: "/home/interactiveSms" , id:1},
-                        ],
-                    },
+                    { label: "Sender Mask", icon:"pi pi-telegram", to: "/home/interactiveSms" , id:1},
+                    { label: "chat History", icon: "pi pi pi-volume-down", to: "/home/interactiveSms/history" , id:2},
+                    { label: "Sending record", icon: "pi pi-volume-down", to: "/home/interactiveSms/report", id:3 },
                 ],
             },
         ],
@@ -75,14 +70,20 @@ const getMenuModel = (rootRoute:any) => {
                 ],
             },
         ],
-        CustomQuestionaire:[
+        questionnaire:[
             {
-                label: "Voice",
+                label: "Questionnaire",
                 items: [
-                    { label: "Voice", icon: "pi pi-fw pi-home", to: "/home/Voice" , id:1},
-                    { label: "Voice History", icon: "pi pi-fw pi-home", to: "/home/Voice/sakai" , id:2},
+                    { label: "Sender Mask", icon:"pi pi-telegram", to: "/home/questionnaire" , id:1},
+                    { label: "Questionnaire", icon: "pi pi-send", to: "/home/questionnaire" , id:2,
+                        items: [
+                            { label: "create New", icon: "pi pi-comments", to: "/home/questionnaire/new" , id:1},
+                            { label: "Send", icon: "pi pi-folder-open", to: "/home/questionnaire/send" , id:3},
+                        ],
+                    },
+                    { label: "Sending record", icon: "pi pi-volume-down", to: "/home/questionnaire/report", id:5 },
                 ],
-            }
+            },
         ]
     };
 

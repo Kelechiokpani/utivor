@@ -55,7 +55,7 @@ const AppTopbar = forwardRef<AppTopbarRef>((props, ref) => {
                 </button>
 
                 <button type="button" className="p-link layout-topbar-button   lg:ml-6 font-bold">
-                    <p className='text-900 text-sm'>Logout</p>
+                    <a href='/' className='text-900 text-sm'>Logout</a>
                     {/*<span>Logout</span>*/}
                 </button>
 

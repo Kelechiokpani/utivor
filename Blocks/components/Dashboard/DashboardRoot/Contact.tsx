@@ -13,9 +13,10 @@ import {FormikHelpers} from "formik";
 import New_Contact_List from "./DashboardForms/New_Contact_List";
 import New_Contact from "./DashboardForms/New_Contact";
 import {GeneralService} from "../../../../public/DemoData";
-import {ContactGroup} from "../../../../types/dashboard";
+import {ContactGroup, QuestionnaireCampaign} from "../../../../types/dashboard";
 import {IFormInput, IFormValues} from "../../../utils/Form/CustomForm";
 import {CustomButton} from "../../../ReusedComponent/Styled_Button";
+import {IoArrowForwardCircleSharp} from "react-icons/io5";
 
 
 
@@ -39,6 +40,7 @@ const ContactScreen = () => {
                 console.error("An error occurred:", error);
             });
     }, []);
+
 
     const items = [
         {
@@ -96,6 +98,17 @@ const ContactScreen = () => {
         setVisible(false)
     };
 
+    const View = (data: ContactGroup) => {
+        return(
+            <div className='text-green-600 text-2xl font-bold cursor-pointer'
+                 onClick={() => {
+                     router.push(`/home/contact/${data?.id}`);
+                 }}>
+                <IoArrowForwardCircleSharp/>
+            </div>
+        )
+    };
+
 
     return(
         <>
@@ -123,7 +136,6 @@ const ContactScreen = () => {
                                     />
                                 </li>
                             ))}
-
                         </ul>
                     </div>
                 </section>
@@ -145,7 +157,6 @@ const ContactScreen = () => {
                             />
                         </div>
                     </div>
-
                     <div className='card mt-4'>
                         <h5 className='font-bold text-1xl ml-2 mt-4'> Contacts List</h5>
                         <DataTable value={contact} tableStyle={{ minWidth: '50rem' }} className='mt-5 text-sm'>
@@ -153,7 +164,7 @@ const ContactScreen = () => {
                             <Column field="groupName" header="List Name" style={{width:"20%"}}></Column>
                             <Column field="Contacts" header="Contacts" style={{width:"20%"}}/>
                             <Column field="date" header="Date" style={{width:"30%"}}></Column>
-                            <Column field="date" header="View groups"  body={(rowData) => viewOptions(rowData?.id)}/>
+                            <Column field="date" header="View"  body={View}/>
                         </DataTable>
                     </div>
                 </TabContent>
@@ -169,9 +180,9 @@ const ContactScreen = () => {
                     </div>
                 </TabContent>
 
-                <TabContent active={activeTabAction === 2}>
+                {/*<TabContent active={activeTabAction === 2}>*/}
 
-                </TabContent>
+                {/*</TabContent>*/}
 
 
                 <Dialog header="Contact List" visible={visible}  onHide={() => setVisible(false)} className='lg:w-60rem m-2'>
@@ -190,36 +201,37 @@ const ContactScreen = () => {
 
 
 const Wrapper = styled.div`
- .dashboard{
+  .dashboard {
     //border-radius: 3rem;
-   font-weight:bold;
-   height:2.7rem;
-   border-radius:10px
+    font-weight: bold;
+    height: 2.7rem;
+    border-radius: 10px
   }
 
-  .card{
-    padding:10px;
-    border-radius:4px
+  .card {
+    padding: 10px;
+    border-radius: 4px
   }
-  
+
   .p-button {
-    background:white;
-    color:orangered;
-    border:none
+    background: transparent;
+    color: #000000;
+    border: none
   }
+
   .p-button:hover {
-    background:transparent;
-    color:orangered;
-    border:none
+    background: #FF7900;
+    color: #ffffff;
+    border: none;
   }
-  
+
   .p-button:focus {
-    box-shadow:none;
-    background:transparent;
-    color:orangered;
-    border:none
+    box-shadow: none;
+    background: transparent;
+    color: #FF7900;
+    border: none
   }
-  
+
   .p-inputtext:enabled:hover {
     border-color: #495057;
   }
@@ -248,6 +260,7 @@ const Wrapper = styled.div`
     border-radius: 1px 15px 15px 1px;
     border: 0.7px solid #ced4da;
   }
+
   .PhoneInputInput:enabled:focus {
     border: 0.1px solid #495057;
   }
@@ -265,8 +278,9 @@ const TabButton = styled(Button)<TabButtonProps>`
     outline: 0 none;
     font-size:13px;
     outline-offset: 0;
+     background: orangered;
     //box-shadow: 0 0 0 0.5px #0b0c0e;
-    background:  ${props => (props?.active ? '#ffffff' : 'transparent')};
+    // background:  ${props => (props?.active ? 'transparent' : 'orangered')};
     box-shadow:  ${props => (props?.active ? '#0b0c0e' : '#0b0c0e')};
     color: #000000;
   

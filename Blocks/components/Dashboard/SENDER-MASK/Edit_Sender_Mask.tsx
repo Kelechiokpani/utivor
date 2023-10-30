@@ -1,15 +1,16 @@
 import {InputText} from "primereact/inputtext";
 import React from "react";
-import {CustomButton} from "../../../../ReusedComponent/Styled_Button";
+import {CustomButton} from "../../../ReusedComponent/Styled_Button";
 
 
-const Create_Sender_Mask =({setShowForm}:any)=>{
+const Edit_Sender_Mask =({setVisible,selectedItemId,selectedItemName}:any)=>{
     return(
-        <div className='lg:w-8 mt-5'>
+        <div className='mt-5'>
             <div>
                 <label htmlFor="Sender Mask" className="block text-900 font-medium mb-2"> *Sender Mask</label>
                 <InputText
-                    id="senderMask"
+                    id={selectedItemId}
+                    defaultValue={selectedItemName}
                     type="text"
                     placeholder="Sender Mask"
                     className="w-full mb-3 p-3" />
@@ -19,17 +20,17 @@ const Create_Sender_Mask =({setShowForm}:any)=>{
                     label={`Cancel`}
                     className="bg-gray-500 mt-3 mr-4 w-4 h-3rem capitalize"
                     icon="add"
-                    onClick={() => setShowForm(false)}
+                    onClick={() => setVisible(false)}
                 />
                 <CustomButton
                     label={`Confirm`}
                     className=" mt-3 w-4 h-3rem capitalize"
                     icon="add"
-                    onClick={() => setShowForm(false)}
+                    onClick={() => setVisible(false)}
                 />
             </div>
         </div>
     )
 }
 
-export default Create_Sender_Mask
+export default Edit_Sender_Mask

@@ -37,20 +37,33 @@ const AppTopbar = forwardRef<AppTopbarRef>((props, ref) => {
             </button>
 
             <div ref={topbarmenuRef} className={classNames('layout-topbar-menu', { 'layout-topbar-menu-mobile-active': layoutState.profileSidebarVisible })}>
-                <button type="button" className="p-link layout-topbar-button">
-                    <i className="pi pi-calendar"></i>
-                    <span>Calendar</span>
+                <button type="button" className="p-link layout-topbar-button   lg:ml-6 font-bold ">
+                    <a href='/home' className='text-orange-600 text-sm'>Dashboard</a>
+                    {/*<span>Dashboard</span>*/}
                 </button>
-                <button type="button" className="p-link layout-topbar-button">
-                    <i className="pi pi-user"></i>
-                    <span>Profile</span>
+
+                <button type="button" className="p-link layout-topbar-button   lg:ml-6 font-bold">
+                    <a href='/home/sms' className='text-orange-600 text-sm'>sms</a>
+                    {/*<span>Contact</span>*/}
                 </button>
-                <Link href="/documentation">
-                    <button type="button" className="p-link layout-topbar-button">
-                        <i className="pi pi-cog"></i>
-                        <span>Settings</span>
-                    </button>
-                </Link>
+                <button type="button" className="p-link layout-topbar-button   lg:ml-6 font-bold">
+                    <a href='/home/questionnaire' className='text-orange-600 text-sm'>Questionnaire</a>
+                    {/*<span>Referral</span>*/}
+                </button>
+                <button type="button" className="p-link layout-topbar-button   lg:ml-6 font-bold">
+                    <a href='/home/voice' className='text-orange-600 text-sm'>voice</a>
+                    {/*<span>Contact</span>*/}
+                </button>
+
+                <button type="button" className="p-link layout-topbar-button   lg:ml-6 font-bold">
+                    <a href='/home/interactiveSms' className='text-orange-600 text-sm'>Interactive</a>
+                    {/*<span>Wallet</span>*/}
+                </button>
+
+                <button type="button" className="p-link layout-topbar-button   lg:ml-6 font-bold">
+                    <a href='/home' className='text-orange-600 text-sm'>Logout</a>
+                    {/*<span>Logout</span>*/}
+                </button>
             </div>
         </div>
     );

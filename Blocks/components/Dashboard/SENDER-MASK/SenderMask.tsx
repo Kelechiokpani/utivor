@@ -1,20 +1,21 @@
 "use client"
 import React, {useEffect, useState} from "react"
 import Image from "next/image";
-import SMSImage from  "../../../../public/image/dashboard/SMS/img.png"
+import SMSImage from "../../../../public/image/dashboard/SMS/img.png"
 import {useRouter} from "next/navigation";
 import {DataTable} from "primereact/datatable";
 import {Column} from "primereact/column";
 import { Dialog } from 'primereact/dialog';
-import Create_Sender_Mask from "./sms-forms/Create_Sender_Mask";
-import Edit_Sender_Mask from "./sms-forms/Edit_Sender_Mask";
+
 import {GeneralService} from "../../../../public/DemoData";
 import {SenderMask} from "../../../../types/dashboard";
 import {CustomButton} from "../../../ReusedComponent/Styled_Button";
+import Create_Sender_Mask from "./Create_Sender_Mask";
+import Edit_Sender_Mask from "./Edit_Sender_Mask";
 
 
 
-const Sms_App = ()=> {
+const SenderMask_App = ()=> {
     const [visible, setVisible] = useState(false);
     const [selectedItemId, setSelectedItemId] = useState('');
     const [selectedItemName, setSelectedItemName] = useState("")
@@ -62,7 +63,7 @@ const Sms_App = ()=> {
                     <Image src={SMSImage} alt="sms" width={300} height={200}/>
                 </div>
                 <div className="w-full xl:w-7 pl-5">
-                    <h3 className=" font-bold mb-4 block">SMS APP</h3>
+                    <h3 className=" font-bold mb-4 block">SENDER MASK</h3>
                     <span className=" text-900 text-1xl mb-4">Create different SMS applications, and send different
                         SMS content reaching users in the ways they prefer.</span>
                     {showForm ? (
@@ -101,7 +102,6 @@ const Sms_App = ()=> {
                         setSelectedItemId('');
                         setSelectedItemName("");
                     }}>
-
                          <Edit_Sender_Mask
                              selectedItemId={selectedItemId}
                              selectedItemName={selectedItemName}
@@ -115,4 +115,4 @@ const Sms_App = ()=> {
     )
 }
 
-export default Sms_App
+export default SenderMask_App

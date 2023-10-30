@@ -1,19 +1,12 @@
 "use client";
-import React, {  useEffect, useRef, useState } from "react";
-import Sms_App from "../../../../Blocks/components/Dashboard/SMS/SMS-APP";
-
-
-
-
-
-
+import SenderMask_App from "../../../../Blocks/components/Dashboard/SENDER-MASK/SenderMask";
 
 const Dashboard = () => {
 
 
     return (
         <div>
-            <Sms_App/>
+            <SenderMask_App/>
         </div>
 
     );

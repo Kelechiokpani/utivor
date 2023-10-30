@@ -1,3 +1,4 @@
+import {QuestionnaireCampaign} from "../types/dashboard";
 
 export const GeneralService:any = {
     getWalletData() {
@@ -107,7 +108,6 @@ export const GeneralService:any = {
         ]
     },
 
-
     getSmsReportData() {
         return [
             {
@@ -134,7 +134,20 @@ export const GeneralService:any = {
         ]
     },
 
-
+    getQuestionnaireCampaignData() {
+        return [
+            {
+                id: 'sjdkhkjs',
+                name: 'KaceTechs',
+                date: "20-10-2023",
+            },
+            {
+                id: 'shkuhskdh',
+                name: 'Kace Technology',
+                date: "10-10-2023",
+            },
+        ]
+    },
 
 
 
@@ -161,5 +174,9 @@ export const GeneralService:any = {
 
     getSmsReportDetails() {
         return Promise.resolve(this.getSmsReportData().slice(0, 10));
+    },
+
+    getQuestionnaireCampaignDetails() {
+        return Promise.resolve(this.getQuestionnaireCampaignData().slice(0, 10));
     },
 }

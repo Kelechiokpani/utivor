@@ -3,28 +3,28 @@ import React from "react";
 import {CustomButton} from "../../../../ReusedComponent/Styled_Button";
 
 
-const Edit_Sender_Mask =({setVisible,selectedItemId,selectedItemName}:any)=>{
+const Edit_Campaign =({setVisible,selectedItemId,selectedItemName}:any)=>{
     return(
         <div className='mt-5'>
             <div>
-                <label htmlFor="Sender Mask" className="block text-900 font-medium mb-2"> *Sender Mask</label>
+                <label htmlFor="Campaign" className="block text-900 font-medium mb-2"> *Campaign</label>
                 <InputText
                     id={selectedItemId}
                     defaultValue={selectedItemName}
                     type="text"
-                    placeholder="Sender Mask"
+                    placeholder="Campaign title"
                     className="w-full mb-3 p-3" />
             </div>
             <div className="relative w-full flex justify-content-end">
                 <CustomButton
                     label={`Cancel`}
-                    className="bg-gray-500 mt-3 mr-4 w-4 h-3rem capitalize"
+                    className="bg-gray-500 mt-3 mr-4 w-4 h-2.1rem capitalize"
                     icon="add"
                     onClick={() => setVisible(false)}
                 />
                 <CustomButton
-                    label={`Confirm`}
-                    className=" mt-3 w-4 h-3rem capitalize"
+                    label={`save`}
+                    className=" mt-3 w-4 h-2.1rem capitalize"
                     icon="add"
                     onClick={() => setVisible(false)}
                 />
@@ -33,4 +33,4 @@ const Edit_Sender_Mask =({setVisible,selectedItemId,selectedItemName}:any)=>{
     )
 }
 
-export default Edit_Sender_Mask
+export default Edit_Campaign
