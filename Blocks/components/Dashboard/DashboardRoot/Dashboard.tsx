@@ -17,8 +17,8 @@ const
     Dashboard = ( )=> {
 
     const router = useRouter();
-        const WhatsappRoute = () => {
-            router.push("/home/questionnaire");
+        const InProgress = () => {
+            router.push("/home/progress");
         };
 
         const Questionnaire = () => {
@@ -89,25 +89,7 @@ const
 
                 {/* Services  Grouping  ----- */}
                 <div className="grid mt-5">
-                    <div className="col-12 md:col-6 lg:col-4 ">
-                        <div className="h-14rem shadow-2 bg-orange-50  p-3 border-round">
-                            <div className="flex justify-content-between">
-                                <div className="py-6 px-3 flex flex-column align-items-start">
-                                    <div className="text-900 font-medium mb-3 text-xl"> Voice campaign management </div>
-                                    <CustomButton
-                                        label={`voice`}
-                                        className="capitalize"
-                                        icon="add"
-                                        onClick={WhatsappRoute}
-                                    />
-                                </div>
-                                <div className="hidden lg:flex align-items-center justify-content-center">
-                                    <Image src={voice} alt="Image" className="mx-auto block  w-12rem h-12rem  " />
-                                </div>
-                            </div>
 
-                        </div>
-                    </div>
                     <div className="col-12 md:col-6 lg:col-4 ">
                         <div className="h-14rem shadow-2 bg-orange-50  p-3 border-round">
                             <div className="flex justify-content-between">
@@ -150,12 +132,31 @@ const
                         <div className="h-14rem shadow-2 bg-orange-50  p-3 border-round">
                             <div className="flex justify-content-between">
                                 <div className="py-6 px-3 flex flex-column align-items-start">
+                                    <div className="text-900 font-medium mb-3 text-xl"> Voice campaign management </div>
+                                    <CustomButton
+                                        label={`voice`}
+                                        className="capitalize"
+                                        icon="add"
+                                        onClick={InProgress}
+                                    />
+                                </div>
+                                <div className="hidden lg:flex align-items-center justify-content-center">
+                                    <Image src={voice} alt="Image" className="mx-auto block  w-12rem h-12rem  " />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div className="col-12 md:col-6 lg:col-4 ">
+                        <div className="h-14rem shadow-2 bg-orange-50  p-3 border-round">
+                            <div className="flex justify-content-between">
+                                <div className="py-6 px-3 flex flex-column align-items-start">
                                     <div className="text-900 font-medium mb-3 text-xl"> Two Way (2) Interactive campaign </div>
                                     <CustomButton
                                         label={`two way texting`}
                                         className="capitalize"
                                         icon="add"
-                                        onClick={WhatsappRoute}
+                                        onClick={InProgress}
                                     />
                                 </div>
                                 <div className="hidden lg:flex align-items-center justify-content-center">
