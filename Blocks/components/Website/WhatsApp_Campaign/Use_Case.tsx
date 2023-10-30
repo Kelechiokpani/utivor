@@ -34,7 +34,7 @@ const Use_Case = () => {
         <Header_Top label="Use Case" className="mb-6" />
         <br />
 
-        <div className="flex flex-row ">
+        <div className="flex flex-row md:ml-8">
           <div className="grid">
             {useCasesGroup.map((item, idx) => (
               <div key={idx} className="w-6 lg:w-4  flex flex-row gap-4  lg:justify-content-start">

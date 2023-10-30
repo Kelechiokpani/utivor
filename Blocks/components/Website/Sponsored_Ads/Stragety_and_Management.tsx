@@ -32,7 +32,7 @@ const Stragety_and_Management_Items = [
 
 export default function Stragety_and_Management() {
   return (
-    <div className="px-6 lg:px-6 surface-0 mb-0">
+    <div className="px-3 lg:px-6 surface-0 mb-0">
       {Stragety_and_Management_Items.map((item, idx) => (
         <Image_and_Text
           label={item.label}

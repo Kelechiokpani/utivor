@@ -61,9 +61,9 @@ const Features = ( ) => {
                 <Header_Top label='Features'/>
                 <Header_Top_Description label='Highly running your business across all digital channels.'/>
             </div>
-            <div className="grid text-center mt-4 p-2 mr-2">
+            <div className="grid text-center">
                 {FeatureItems?.map((data:any)=> (
-                        <div className="feature_cards col-12 lg:col-3  md:col-3  mb-4 py-6" key={data?.id}>
+                        <div className="feature_cards lg:col-12 lg:col-4 md:col-6  mb-4 py-6" key={data?.id}>
                             <span className="inline-block  border-circle w-4rem h-4rem mb-3 mt-3" style={{ background:"#FFF2F2" }}>
                                 <img src={data?.icon} alt='data?.icon' key={data?.id} className='mt-3'/>
                             </span>

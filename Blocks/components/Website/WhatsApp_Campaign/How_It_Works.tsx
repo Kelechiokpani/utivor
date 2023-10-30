@@ -14,9 +14,9 @@ const Speak_To_An_Expert = () => {
   };
 
   return (
-    <Container className="w-full surface-0 text-800 p-1">
+    <Container className="w-full surface-0 text-800">
       <div className="flex flex-row ">
-        <div className="col-12 md:col-6 lg:p-8 p-1 flex align-items-center text-center">
+        <div className="col-12 md:col-6 lg:p-4 p-1 flex align-items-center text-center">
           <section>
             {/*<Header_Top label="How It Works" />*/}
             <Header_Top label="The conversational chat experience" />
@@ -25,7 +25,7 @@ const Speak_To_An_Expert = () => {
             <br />
           </section>
         </div>
-        <div className="hidden lg:flex flex-column align-items-center col-12 md:col-6 overflow-hidden p-1">
+        <div className="hidden lg:flex md:flex flex-column align-items-center col-12 md:col-6  p-1">
           <div className="w-8">
             <Image
               src={image}

@@ -13,7 +13,7 @@ export default function Card(props: CardProps) {
   const { title, content, icon, index} = props;
 
   return (
-    <div key={index} className="col-12 md:col-6 xl:col-4 lg:p-3 mb-3">
+    <div key={index} className="col-12 md:col-6 xl:col-4 lg:p-2 md:p-2 mb-3">
       <CardContainer className="surface-card shadow-2 border-round p-4">
         <div className="flex flex-row justify-content-center mb-3">
           <Image src={icon} className="mr-3" alt="1" />

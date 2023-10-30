@@ -45,7 +45,7 @@ const HeroSection = () => {
               src={HeroImg}
               alt="hero-1"
               // className="md:ml-auto block "
-              className="md:ml-auto block w-full"
+              className="md:ml-auto block w-full md:w-full"
             />
           }
         />
