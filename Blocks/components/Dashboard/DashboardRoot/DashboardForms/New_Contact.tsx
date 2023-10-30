@@ -52,7 +52,7 @@ import TextInputArea from "../../../../utils/Inputs/TextInputArea";
     };
 
     return(
-        <>
+        <div className='w-full'>
             <CustomForm
                 onFormReset={NewRoute}
                 validateOnMount={false}
@@ -62,11 +62,11 @@ import TextInputArea from "../../../../utils/Inputs/TextInputArea";
                 onSubmitFunction={handleSubmit}
                 // loading={loading}
                 formInputs={inputList}
-                formButtonProps={{ className: 'w-15rem flex bg-orange-600 justify-between align-content-end text-lg text-white font-bold' }}
+                formButtonProps={{ className: 'lg:w-15rem flex bg-orange-600 justify-between align-content-end text-lg text-white font-bold' }}
                 submitButtonText="Add New Contact"
             />
 
-        </>
+        </div>
     )
 }
 

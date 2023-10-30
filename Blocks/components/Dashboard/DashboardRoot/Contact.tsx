@@ -100,7 +100,7 @@ const ContactScreen = () => {
     return(
         <>
             <Toast ref={toast} />
-            <Wrapper className="surface-ground px-4 py-5 md:px-6 lg:px-8 mt-6">
+            <Wrapper className=" w-full surface-ground px-4 py-5 md:px-6 lg:px-8 mt-6">
                 <div className="  py-5 flex flex-wrap gap-3 justify-content-between align-items-center mb-2 grid">
 
                     <div className="flex flex-column gap-2 ">
@@ -159,9 +159,9 @@ const ContactScreen = () => {
                 </TabContent>
 
                 <TabContent active={activeTabAction === 1}>
-                    <div className=" py-4 col-7 md:col-7">
+                    <div className=" py-4 lg:col-12 md:col-8">
                         <div className="font-bold  text-md mb-3">Add New Bulk Contact</div>
-                        <div className="surface-card p-6 shadow-1 border-round">
+                        <div className="surface-card p-4 shadow-1 border-round">
                             <div className="formgrid p-fluid">
                                <New_Contact/>
                             </div>
