@@ -39,22 +39,21 @@ const KreativeRockMobile_Texting = ( )=>{
 
     return (
         <Container>
-            <div className="px-4  md:px-6 lg:px-8" >
-                {/*<div className='p-2 m-6'>*/}
-                    <div className='lg:p-8 p-2'>
+            <div className="px-4 md:px-6 lg:px-8" >
+                        <div className='p-6'>
                     <Header_Top label='KreativeRock Mobile Texting Services'/>
                      <HR_Line/>
                    </div>
 
-                <div className="grid mt-7">
+                <div className="grid">
                     {TextingServiceItems?.map((data:any)=> (
                         <div className="col-12 md:col-4" key={data?.id}>
-                            <div className="shadow-1 lg:p-7 p-4 surface-card text-center border-round-2xl">
+                            <div className="shadow-1 p-6 surface-card lg:text-center border-round-2xl">
                                 <div className="border-circle bg-blue-50 p-4 inline-flex justify-content-center align-items-center mb-4">
                                     <img src={data?.icon} alt='data?.icon' key={data?.id} className=''/>
                                 </div>
-                                <div className="text-900 font-bold text-lg  mb-4">{data?.title}</div>
-                                <div className="text-700 mb-4 line-height-3">{data?.description}</div>
+                                <div className="text-900 font-bold text-lg mb-4">{data?.title}</div>
+                                <div className="text-700  line-height-3">{data?.description}</div>
                             </div>
                         </div>
                     ))}

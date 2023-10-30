@@ -31,7 +31,7 @@ const FeatureItems = [
                   contents. Delivering Ads on YouTube will help you reach
                   your audience faster. We will use through YouTube ads
                   to run Sponsored ads or drive engagement through
-                  content marketing that will help you achieve your goals
+                  content marketing to achieve your goals
                   faster.”
                   `,
   },
@@ -90,10 +90,10 @@ interface IData {
 const Services = () => {
   return (
     <Container>
-      <div className="mt-0 px-4 pt-0 pb-8 md:px-6 lg:px-8 surface-0 text-center">
+      <div className="mt-4 px-2 pt-0 md:px-4 lg:px-8 surface-0 text-center">
         {/* <div className="grid text-center"> */}
 
-        <div className="grid grid-nogutter lg:px-4">
+        <div className="grid grid-nogutter">
           {FeatureItems?.map((data: IData, index) => (
             <Card
               index={index}
@@ -114,7 +114,7 @@ const Container = styled.div`
   color: #000;
   padding-bottom: 10px;
   padding-top: 10px;
-  font-family: Lora;
+  line-height: 22px;
 
   .feature_cards {
     border-radius: 16px;

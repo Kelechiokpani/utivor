@@ -12,7 +12,7 @@ const HeroSection = () => {
   const router = useRouter();
 
   const NewRoute = () => {
-    router.push("/sign_up");
+    router.push("/register");
   };
 
   return (

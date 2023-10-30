@@ -10,25 +10,22 @@ const Speak_To_An_Expert = () => {
   const router = useRouter();
 
   const NewRoute = () => {
-    router.push("/sign_up");
+    router.push("/register");
   };
 
   return (
-    <Container className="w-full surface-0 text-800 lg:p-6 lg:px-8 p-2">
-      <div className="p-4 lg:p-8 lg:pt-0 lg:pb-0 lg:pr-8">
-        <Header_Top label="How It Works" />
-        <br />
-      </div>
+    <Container className="w-full surface-0 text-800 p-1">
       <div className="flex flex-row ">
-        <div className="col-12 md:col-6 lg:p-6 lg:pr-8 -mt-8 rem p-4  flex align-items-center text-center">
+        <div className="col-12 md:col-6 lg:p-8 p-1 flex align-items-center text-center">
           <section>
-            <Header_Span label="The conversational chat experience" />
+            {/*<Header_Top label="How It Works" />*/}
+            <Header_Top label="The conversational chat experience" />
             <br />
             <Header_Span_Description label="Provide an integrated shopping with WhatsApp's native catalogue and cart function." />
             <br />
           </section>
         </div>
-        <div className="flex flex-column align-items-center col-12 md:col-6 overflow-hidden p-1">
+        <div className="hidden lg:flex flex-column align-items-center col-12 md:col-6 overflow-hidden p-1">
           <div className="w-8">
             <Image
               src={image}

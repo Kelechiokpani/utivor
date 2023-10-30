@@ -54,7 +54,7 @@ export const Header_Top_Span = ({ label, className }: any) => {
 export const HR_Line = ({ className }: { className?: string }) => {
   return (
     <hr
-      className={`w-4 ${className}`}
+      className={`w-4 mb-4 ${className}`}
       style={{
         height: "4px",
         margin: "10px auto 0px auto",

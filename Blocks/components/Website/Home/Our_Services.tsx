@@ -13,7 +13,7 @@ export default function Our_Services() {
   };
 
   return (
-    <Container className="px-4 lg:px-8">
+    <Container className="px-2 lg:px-8">
       <div className="mb-8 text-center">
         <Header_Top label="Our Services" />
         <HR_Line className="w-4 md:w-4 lg:w-2 mb-3" />
@@ -24,7 +24,7 @@ export default function Our_Services() {
         />
       </div>
 
-      <div className="grid lg:px-4 ">
+      <div className="grid lg:px-2 ">
         {Service?.map((item, idx) => (
           <TogglableLandingCard
             title={item.title}

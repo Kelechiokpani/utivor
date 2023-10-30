@@ -37,7 +37,7 @@ const Use_Case = () => {
         <div className="flex flex-row ">
           <div className="grid">
             {useCasesGroup.map((item, idx) => (
-              <div key={idx} className="w-4 flex flex-row gap-3  justify-content-center">
+              <div key={idx} className="w-6 lg:w-4  flex flex-row gap-4  lg:justify-content-start">
                 <div className="mt-6 pt-1 ">
                   {idx % 3 === 0 ? (
                     <Image src={brown_bullet} alt="brown_bullet" width={18} />

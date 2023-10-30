@@ -56,13 +56,12 @@ const FeatureItems = [
 const Features = ( ) => {
     return (
         <Container>
-        <div className=" px-4 py-8 md:px-6 lg:px-8 text-center lg:m-5">
-            {/*<div className="px-8 md:px-8 lg:px-8 ">*/}
+        <div className="px-2 py-8 md:px-6 lg:px-8 text-center lg:m-5">
             <div className='p-2 m-2'>
                 <Header_Top label='Features'/>
                 <Header_Top_Description label='Highly running your business across all digital channels.'/>
             </div>
-            <div className="grid text-center mt-4">
+            <div className="grid text-center mt-4 p-2 mr-2">
                 {FeatureItems?.map((data:any)=> (
                         <div className="feature_cards col-12 lg:col-3  md:col-3  mb-4 py-6" key={data?.id}>
                             <span className="inline-block  border-circle w-4rem h-4rem mb-3 mt-3" style={{ background:"#FFF2F2" }}>

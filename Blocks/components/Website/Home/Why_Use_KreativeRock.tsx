@@ -62,7 +62,7 @@ const Why_Use_KreativeRock = () => {
         />
       </div>
 
-      <div className="grid grid-nogutter">
+      <div className="grid grid-nogutter p-2">
         {Why_Use_KreativeRock_Items.map((item,index) => (
           <Card index={index} key={index} title={item.title} content={item.content} icon={item.icon} />
         ))}

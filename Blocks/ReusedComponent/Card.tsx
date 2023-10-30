@@ -30,7 +30,7 @@ export default function Card(props: CardProps) {
 }
 
 const CardContainer = styled.div`
-  height: 16rem;
+  height: 18rem;
 `;
 
 const TextDiv = styled.div`

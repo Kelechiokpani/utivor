@@ -16,21 +16,21 @@ const Footer = ( )=>{
                             </span>
                         </div>
 
-                        <div className='mt-5'>
+                        <div className='mt-4'>
                             <h2 className='text-xl font-bold'>Mission Statement</h2>
-                          <ul>
-                              <li className=' text-md mt-2 text-sm'>Create business solutions that works for
+
+                              <p className=' text-md mt-2 text-sm'>Create business solutions that works for
                                   sustained business growth.
-                              </li>
-                              <li className=' text-md mt-2 text-sm'>Help improve company’s chances of success
-                                  through results-oriented strategies</li>
-                              <li className=' text-md mt-2 text-sm'>Give back to the society through community
+                              </p>
+                              <p className=' text-md mt-2 text-sm'>Help improve company’s chances of success
+                                  through results-oriented strategies</p>
+                              <p className=' text-md mt-2 text-sm'>Give back to the society through community
                                   development services.
-                              </li>
-                          </ul>
+                              </p>
+
                         </div>
                     </div>
-                <div className="col-12 md:col-6 lg:col-3 mt-4 lg:mt-0 lg:pl-4 flex flex-column p-4">
+                <div className="col-12 md:col-6 lg:col-3 mt-3 lg:mt-0 lg:pl-4 flex flex-column p-4">
                     <span className=" text-xl font-bold block">Links</span>
                     <ul className="list-none p-0">
                         <li className='flex flex-row mt-3'>

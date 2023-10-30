@@ -33,23 +33,25 @@ const HeroSection = () => {
         />
 
       </div>
+
+
       <div className="flex justify-content-between mt-4 md:-mt-7">
-        <div className="flex justify-content-center md:justify-content-end">
+        <div className="hidden md:flex justify-content-center md:justify-content-end">
           <Image
             src={H1}
             alt="Hero Image"
             className="w-9 md:w-auto"
           />
         </div>
-        <ButtonDiv className="flex justify-content-center">
-          <CustomButton
-              label="Get Started"
-              className="text-xl border-none mt-3 capitalize cursor-pointer font-normal line-height-3 px-3 text-white"
-              icon="add"
-              onClick={NewRoute}
-          />
-        </ButtonDiv>
-        <div className="flex justify-content-center md:justify-content-end">
+          <ButtonDiv className="flex justify-content-center ml-8 lg:mt-8">
+              <CustomButton
+                  label="Get Started"
+                  className="text-xl border-none mt-3 capitalize cursor-pointer font-normal line-height-3 px-4 mb-6 text-white"
+                  icon="add"
+                  onClick={NewRoute}
+              />
+          </ButtonDiv>
+        <div className="hidden md:flex justify-content-center md:justify-content-end">
           <Image
               src={H2}
             alt="Hero Image"
@@ -57,6 +59,9 @@ const HeroSection = () => {
           />
         </div>
       </div>
+
+
+
     </Container>
   );
 };
@@ -92,9 +97,8 @@ const Heading = styled.h1`
 `;
 
 const ButtonDiv = styled.div`
-  width: 12.7rem;
+  width: 13rem;
   //margin: 10rem auto;
-  margin-top: 5rem;
 
   @media (min-width: 768px) {
     width: 23rem;

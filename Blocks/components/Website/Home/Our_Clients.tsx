@@ -14,7 +14,7 @@ const Our_Clients =()=> {
         <Header_Top_Span
           label="We serve companies of all sizes, all around the globe.
           We speak your language"
-          className="font-light text-2xl"
+          className="font-light text-2xl p-2"
         />
       </div>
 
