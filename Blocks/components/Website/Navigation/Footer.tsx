@@ -3,8 +3,8 @@ import {FooterStyle} from "../../../../styles/Styled_component/StyledComponent";
 const Footer = ( )=>{
     return(
         <FooterStyle>
-            <div className="grid grid-nogutter  px-4 py-8 md:px-6 lg:px-8 border-top-1 surface-border">
-                    <div className="col-12 md:col-6 lg:col-6 mt-4 lg:mt-0 lg:pl-4 flex flex-column p-4">
+            <div className="grid grid-nogutter  px-4 py-8 md:px-4 lg:px-4 border-top-1 surface-border">
+                    <div className="col-12 md:col-6 lg:col-6 mt-4 lg:mt-0 lg:pl-4 flex flex-column p-2">
                         <div>
                             <h2 className='text-xl font-bold'>About US</h2>
                             <span className=" block mt-2 mr-2 text-sm line-height-3">
@@ -30,7 +30,7 @@ const Footer = ( )=>{
 
                         </div>
                     </div>
-                <div className="col-12 md:col-6 lg:col-3 mt-3 lg:mt-0 lg:pl-4 flex flex-column p-4">
+                <div className="col-12 md:col-6 lg:col-3 mt-3 lg:mt-0 lg:pl-4 flex flex-column p-2">
                     <span className=" text-xl font-bold block">Links</span>
                     <ul className="list-none p-0">
                         <li className='flex flex-row mt-3'>
@@ -53,7 +53,7 @@ const Footer = ( )=>{
                             <a href='/termsofuse' className=" hover:text-teal-500 transition-duration-150 cursor-pointer text-sm  block">Terms of use</a></li>
                     </ul>
                 </div>
-                <div className="col-12  md:col-6 lg:col-3 flex mt-4 lg:mt-0 lg:pl-4 flex-column p-4">
+                <div className="col-12  md:col-6 lg:col-3 flex mt-4 lg:mt-0 lg:pl-4 flex-column p-2">
                     <span className=" text-xl font-bold block">Account</span>
                     <ul className="list-none p-0">
                         <li><a className=" hover:text-teal-500 text-sm transition-duration-150 cursor-pointer mt-3 block">No. 77 Ojueleba Road, Surulere, Lagos State, Nigeria</a></li>

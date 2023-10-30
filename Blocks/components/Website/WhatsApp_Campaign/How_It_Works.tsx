@@ -14,14 +14,15 @@ const Speak_To_An_Expert = () => {
   };
 
   return (
-    <Container className="w-full surface-0 text-800">
+    <Container className="w-full surface-0 text-800 mt-6">
       <div className="flex flex-row ">
-        <div className="col-12 md:col-6 lg:p-4 p-1 flex align-items-center text-center">
+        <div className="col-12 md:col-6 lg:p-4 p-4 flex align-items-center lg:text-center">
           <section>
-            {/*<Header_Top label="How It Works" />*/}
             <Header_Top label="The conversational chat experience" />
             <br />
-            <Header_Span_Description label="Provide an integrated shopping with WhatsApp's native catalogue and cart function." />
+
+           <Header_Span_Description label="Provide an integrated shopping with WhatsApp's native catalogue and cart function." />
+
             <br />
           </section>
         </div>

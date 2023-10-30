@@ -8,7 +8,7 @@ export default function Request_a_Callback() {
     <Container className="px-4 py-8 md:px-6 lg:px-12 lg:flex justify-content-center  align-content-center ">
       <div className=" lg:px-6">
         <div className="flex flex-column">
-          <div className="mb-7 text-center">
+          <div className="mb-7 lg:text-center">
             <Header_Top label="Request A Callback" />
             <HR_Line className="w-4 md:w-4 lg:w-2" />
             <Paragraph className="mt-4">
