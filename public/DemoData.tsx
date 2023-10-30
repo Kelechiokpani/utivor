@@ -72,14 +72,14 @@ export const GeneralService:any = {
             {
                 senderId: 'sjdkhkjs',
                 userName: 'Chinedu Wilbert',
-                senderMask: 'KaceTechs',
+                senderMask: 'SenderMask testing One',
                 status: "pending",
                 date: "20-10-2023",
             },
             {
                 senderId: 'shkuhskdh',
                 userName: 'Chinedu Wilbert',
-                senderMask: 'Kace Technology',
+                senderMask: 'SenderMask testing two',
                 status: "approved",
                 date: "10-10-2023",
             },
@@ -138,12 +138,12 @@ export const GeneralService:any = {
         return [
             {
                 id: 'sjdkhkjs',
-                name: 'KaceTechs',
+                name: 'questionnaire one',
                 date: "20-10-2023",
             },
             {
                 id: 'shkuhskdh',
-                name: 'Kace Technology',
+                name: 'questionnaire two',
                 date: "10-10-2023",
             },
         ]

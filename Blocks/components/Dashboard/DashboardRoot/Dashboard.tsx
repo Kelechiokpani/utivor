@@ -17,14 +17,17 @@ const
     Dashboard = ( )=> {
 
     const router = useRouter();
-    const WhatsappRoute = () => {
-        router.push("/home/interactiveSms");
-    };
+        const WhatsappRoute = () => {
+            router.push("/home/questionnaire");
+        };
 
+        const Questionnaire = () => {
+            router.push("/home/questionnaire");
+        };
 
-    const SmsRoute = () => {
-        router.push("/home/sms");
-    };
+        const SmsRoute = () => {
+            router.push("/home/sms");
+        };
 
 
     return (
@@ -128,6 +131,25 @@ const
                         <div className="h-14rem shadow-2 bg-orange-50  p-3 border-round">
                             <div className="flex justify-content-between">
                                 <div className="py-6 px-3 flex flex-column align-items-start">
+                                    <div className="text-900 font-medium mb-3 text-xl"> Custom Questionaire campaign </div>
+                                    <CustomButton
+                                        label={`Questionaire`}
+                                        className="capitalize"
+                                        icon="add"
+                                        onClick={Questionnaire}
+                                    />
+                                </div>
+                                <div className="hidden lg:flex align-items-center justify-content-center">
+                                    <Image src={question} alt="Image" className="mx-auto block  w-12rem h-12rem  " />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div className="col-12 md:col-6 lg:col-4 ">
+                        <div className="h-14rem shadow-2 bg-orange-50  p-3 border-round">
+                            <div className="flex justify-content-between">
+                                <div className="py-6 px-3 flex flex-column align-items-start">
                                     <div className="text-900 font-medium mb-3 text-xl"> Two Way (2) Interactive campaign </div>
                                     <CustomButton
                                         label={`two way texting`}
@@ -143,25 +165,7 @@ const
 
                         </div>
                     </div>
-                    <div className="col-12 md:col-6 lg:col-4 ">
-                        <div className="h-14rem shadow-2 bg-orange-50  p-3 border-round">
-                            <div className="flex justify-content-between">
-                                <div className="py-6 px-3 flex flex-column align-items-start">
-                                    <div className="text-900 font-medium mb-3 text-xl"> Custom Questionaire campaign </div>
-                                    <CustomButton
-                                        label={`Questionaire`}
-                                        className="capitalize"
-                                        icon="add"
-                                        onClick={WhatsappRoute}
-                                    />
-                                </div>
-                                <div className="hidden lg:flex align-items-center justify-content-center">
-                                    <Image src={question} alt="Image" className="mx-auto block  w-12rem h-12rem  " />
-                                </div>
-                            </div>
 
-                        </div>
-                    </div>
                 </div>
             </div>
     )

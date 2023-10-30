@@ -76,8 +76,9 @@ const CampaignCreation = ()=> {
                 </div>
                 <div className="w-full xl:w-7 pl-5">
                     <h3 className=" font-bold mb-4 block">Questionnaire Campaign </h3>
-                    <span className=" text-900 text-1xl mb-4">Create different SMS applications, and send different
+                    <span className=" text-900 text-1xl mb-4">Create questionnaire Campaign , and send different
                         SMS content reaching users in the ways they prefer.</span>
+                    <p className=" text-orange-600 text-sm mt-4">N/B: After Creating Campaign Click on View to Create Campaign questionnaire.</p>
                     {showForm ? (
                         <CreateCampaign setShowForm={setShowForm} />
                     ) : (
