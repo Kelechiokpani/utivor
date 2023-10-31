@@ -45,7 +45,7 @@ const KreativeRockMobile_Texting = ( )=>{
                          <HR_Line/>
                      </div>
 
-                <div className="grid">
+                <div className="grid lg:p-8">
                     {TextingServiceItems?.map((data:any)=> (
                         <div className="col-12 lg:col-4 md:col-6" key={data?.id}>
                             <div className="shadow-1 p-4 surface-card  lg:text-center border-round-2xl">
