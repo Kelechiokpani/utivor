@@ -20,7 +20,6 @@ const Speak_To_An_Expert = () => {
           <section>
             <Header_Top label="The conversational chat experience" />
             <br />
-
            <Header_Span_Description label="Provide an integrated shopping with WhatsApp's native catalogue and cart function." />
 
             <br />

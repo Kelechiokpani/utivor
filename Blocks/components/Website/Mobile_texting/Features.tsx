@@ -56,20 +56,24 @@ const FeatureItems = [
 const Features = ( ) => {
     return (
         <Container>
-        <div className="px-2 py-8 md:px-6 lg:px-8 text-center lg:m-5">
-            <div className='p-2 m-2'>
+        {/*<div className="px-4 py-8 md:px-4 lg:px-2 text-center ">*/}
+            <div className="px-4 md:px-4 lg:px-7 text-center mt-8" >
+            <div className='p-2 m-2 mb-4'>
                 <Header_Top label='Features'/>
                 <Header_Top_Description label='Highly running your business across all digital channels.'/>
             </div>
             <div className="grid text-center">
                 {FeatureItems?.map((data:any)=> (
-                        <div className="feature_cards lg:col-12 lg:col-4 md:col-6  mb-4 py-6" key={data?.id}>
+                    // <div className="col-4 md:col-6 lg:col-3 w-full " key={data?.id} >
+                        <div className="col-12 lg:col-4 md:col-6 sm:col-4" key={data?.id}>
+                        <div className="shadow-2 border-round  border-roundmd:p-2 p-4" style={{height:"20rem"}}>
                             <span className="inline-block  border-circle w-4rem h-4rem mb-3 mt-3" style={{ background:"#FFF2F2" }}>
                                 <img src={data?.icon} alt='data?.icon' key={data?.id} className='mt-3'/>
                             </span>
                             <div className="text-800 text-xl mb-5 font-medium">{data?.title}</div>
-                            <span className="text-800 text-md line-height-3 p-4">{data?.description}</span>
+                            <span className="text-800 text-md  line-height-3 ">{data?.description}</span>
                         </div>
+                    </div>
                 ))}
             </div>
         </div>

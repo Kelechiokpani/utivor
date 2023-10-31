@@ -74,7 +74,7 @@ const UseCase = ( )=>{
             </div>
             <div className="grid  text-center">
                 {UseCaseItems?.map((data:any)=> (
-                    <div className="col-12 md:col-6 lg:col-4 " key={data?.id}>
+                    <div className="col-12 md:col-6 lg:col-4" key={data?.id}>
                         <div className="px-2  surface-card shadow-2 border-round border-orange-100 border-3 border-round p-6 py-7">
                             <div className="text-900 font-bold  text-1xl mb-2">{data?.title}</div>
                             <p className="text-800">{data?.description}.</p>
