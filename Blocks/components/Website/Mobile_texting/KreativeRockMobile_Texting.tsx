@@ -38,14 +38,14 @@ const TextingServiceItems = [
 const KreativeRockMobile_Texting = ( )=>{
 
     return (
-        <Container>
+        <Container className="lg:p-6">
             <div className="px-4 md:px-4 lg:px-2" >
                    <div className='p-6'>
                         <Header_Top label='KreativeRock Mobile Texting Services'/>
                          <HR_Line/>
                      </div>
 
-                <div className="grid lg:p-8">
+                <div className="grid ">
                     {TextingServiceItems?.map((data:any)=> (
                         <div className="col-12 lg:col-4 md:col-6" key={data?.id}>
                             <div className="shadow-1 p-4 surface-card  lg:text-center border-round-2xl">
