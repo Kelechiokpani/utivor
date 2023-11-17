@@ -24,6 +24,7 @@ const SimpleLayout = ({ children, showNavBar = false, showFooter = false, }: any
             //     <link id="theme-css" href={`/themes/lara-light-indigo/theme.css`} rel="stylesheet"></link>
             // </head>
             //     <body>
+
                     <StyledComponentsRegistry>
                         <React.Fragment>
                         {showNavBar && <NavigationMenu />}
@@ -31,6 +32,8 @@ const SimpleLayout = ({ children, showNavBar = false, showFooter = false, }: any
                         {showFooter && <Footer />}
                         </React.Fragment>
                     </StyledComponentsRegistry>
+
+
 
             //     </body>
             // </html>

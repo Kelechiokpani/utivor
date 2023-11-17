@@ -1,14 +1,9 @@
-
+"use client"
 import styled from "styled-components";
-import {CustomButton} from "../../../ReusedComponent/Styled_Button";
-import {Header_Top_Span} from "../../../ReusedComponent/Text_Typography";
 import {useRouter} from "next/navigation";
+import {Button} from "primereact/button";
 
-//    src="/image/website/landing_page/hero-graphic-2.svg"
 
-import H1 from "../../../../public/image/website/landing_page/hero-graphic-1.svg"
-import H2 from "../../../../public/image/website/landing_page/hero-graphic-2.svg"
-import Image from "next/image";
 const HeroSection = () => {
 
   const router = useRouter();
@@ -20,47 +15,17 @@ const HeroSection = () => {
 
 
   return (
-    <Container
-      id="hero"
-      className="flex flex-column pt-4 px-2 lg:px-8 ">
-      <div className="mx-4 md:mx-8 mt-0 md:mt-4 md:pt-6  text-center">
-        <Heading className="text-2xl md:text-4xl font-bold text-gray-900 line-height-2">
-          Take Control with KreactiveRock Technology
-        </Heading>
-        <Header_Top_Span
-          label="Our support is top-notch, get started now!"
-          className="text-2xl"
-        />
-
+    <Container id="hero"
+      className="flex flex-column justify-content-center text-center pt-4 px-2 lg:px-8 ">
+          <div className="mx-4 md:mx-8 mt-0 md:mt-4 md:pt-6 text-center mb-8">
+            <h5 className="text-5xl font-bold text-white mb-2">
+                Discover boundless possibilities with us
+            </h5>
+              <h5 className="text-5xl mt-0 font-bold text-purple-600 ">
+                  "where your dreams meet innovation".
+              </h5>
+              <Button onClick={NewRoute} className='btn px-7 py-3 mt-2'> LETS TALK</Button>
       </div>
-
-
-      <div className="flex justify-content-between mt-4 md:-mt-7">
-        <div className="hidden md:flex justify-content-center md:justify-content-end">
-          <Image
-            src={H1}
-            alt="Hero Image"
-            className="w-9 md:w-auto"
-          />
-        </div>
-          <ButtonDiv className="flex justify-content-center ml-8 lg:mt-8">
-              <CustomButton
-                  label="Get Started"
-                  className="text-xl border-none mt-3 capitalize cursor-pointer font-normal line-height-3 px-4 mb-6 text-white"
-                  icon="add"
-                  onClick={NewRoute}
-              />
-          </ButtonDiv>
-        <div className="hidden md:flex justify-content-center md:justify-content-end">
-          <Image
-              src={H2}
-            alt="Hero Image"
-            className="w-9 md:w-auto"
-          />
-        </div>
-      </div>
-
-
 
     </Container>
   );
@@ -69,61 +34,20 @@ const HeroSection = () => {
 export default HeroSection;
 
 const Container = styled.div`
-  background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.2),
-      rgba(255, 255, 255, 0.2)
-    ),
-    radial-gradient(
-      77.36% 256.97% at 77.36% 57.52%,
-      #f9dfc7 0%,
-      #bdefe8 20%,
-      #f9dfc7 70%
-    );
-  clippath: "inset(0% 0% 0% 0%)";
-`;
+  height: 697px;
+  flex-shrink: 0;
+  background-image: linear-gradient(to right, rgba(32, 30, 30, 0.86), rgba(32, 30, 30, 0.86)), url("/utivor/hero.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat, no-repeat;
+  fill: rgba(217, 217, 217, 0.13);
 
-const Heading = styled.h1`
-  text-transform: uppercase;
-  padding-top: 3rem;
+  .btn {
+    border-radius: 5px;
+    background: #3F4CB0;
+    box-shadow: 0px 4px 16px 0px rgba(63, 76, 176, 0.30);
 
-  @media (min-width: 768px) {
-    background-image: url("/image/website/landing_page/curvy-arrow-2.svg"),
-      url("/image/website/landing_page/stars.svg");
-    background-size: 12%, 6%; 
-    background-position: 3% 40%, 2% 6%;
-    background-repeat: no-repeat no-repeat;
+    flex-shrink: 0;
   }
 `;
 
-const ButtonDiv = styled.div`
-  width: 13rem;
-  //margin: 10rem auto;
-
-  @media (min-width: 768px) {
-    width: 23rem;
-    background-image: url("/image/website/landing_page/curvy-arrow-2.svg"); /* Specify the path to your image */
-    background-size: 15%; /* Adjust this property as needed */
-    background-position: 10% 0%;
-    background-repeat: no-repeat;
-  }
-`;
-
-const TaglineParagraph = styled.p`
-  background-image: url("/image/website/landing_page/scribble.svg"); /* Specify the path to your image */
-  background-size: 9%; /* Adjust this property as needed */
-  background-repeat: no-repeat;
-  background-position: 92% 90%;
-
-  @media (min-width: 768px) {
-    background-position: 90% 90%;
-  }
-
-  @media (min-width: 992px) {
-    background-position: 78% 90%;
-  }
-
-  @media (min-width: 1024px) {
-    background-position: 80% 90%;
-  }
-`;

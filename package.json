@@ -1,6 +1,6 @@
 {
-  "name": "sakai-react",
-  "version": "10.1.0-SNAPSHOT",
+  "name": "utivor",
+  "version": "10.1.0-UTIVOR",
   "private": true,
   "scripts": {
     "dev": "next dev",

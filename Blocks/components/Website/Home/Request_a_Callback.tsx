@@ -5,25 +5,20 @@ import Form_Input from "../../../ReusedComponent/Form_Input";
 
 export default function Request_a_Callback() {
   return (
-    <Container className="px-4 py-8 md:px-6 lg:px-12 lg:flex justify-content-center  align-content-center ">
+    <Container className="px-4 py-8 md:px-6 lg:px-12 lg:flex justify-content-center  align-content-center " style={{height:"40rem"}}>
       <div className=" lg:px-6">
         <div className="flex flex-column">
           <div className="mb-7 lg:text-center">
-            <Header_Top label="Request A Callback" />
-            <HR_Line className="w-4 md:w-4 lg:w-2" />
-            <Paragraph className="mt-4">
-              There is more than one approach to help you identify the ideal
-              brand management technique that suites your brand. Fill this form
-              and let’s learn how you want us to serve you.
-            </Paragraph>
+          <h3 className='text-indigo-500 font-bold'>WE WORK WITH THE BIGGEST NAMES </h3>
+
           </div>
         </div>
 
       </div>
 
-      <div className=' lg:col-6 justify-content-center align-items-center  '>
-        <Form_Input/>
-      </div>
+      {/*<div className=' lg:col-6 justify-content-center align-items-center  '>*/}
+
+      {/*</div>*/}
 
     </Container>
   );

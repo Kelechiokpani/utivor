@@ -1,6 +1,9 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
+import phoneIcon from "../../public/image/website/landing_page/more/smartphone.svg";
+import emailIcon from "../../public/image/website/landing_page/more/email.svg";
 
 export const Header_Span = ({ label, className }: any) => {
   return (
@@ -75,3 +78,13 @@ export const AuthHeader = ({ label }: any) => {
 export const AuthDesc = ({ label }: any) => {
   return <p className="mt-0 mb-4 text-700 line-height-3">{label}</p>;
 };
+
+export const Header = ({label}:any)=>{
+  return(
+      <div className="py-5  mx-0 p-4 px-0 lg:mx-12 lg:px-8 flex justify-content-center md:justify-content-center bg-black-alpha-90 gap-6 md:gap-3">
+        <h1 className="w-auto flex text-3xl font-bold text-white">
+          {label}
+        </h1>
+      </div>
+  )
+}

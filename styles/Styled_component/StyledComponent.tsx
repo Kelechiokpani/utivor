@@ -78,7 +78,7 @@ export const FooterStyle = styled.div`
   }
 
   .Footer_bottom {
-    background: #00CCA7;
+    background: #3F4CB0;
   }
   a{
     text-decoration:none;

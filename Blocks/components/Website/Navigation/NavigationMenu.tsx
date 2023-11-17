@@ -2,63 +2,26 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
-import emailIcon from "../../../../public/image/website/landing_page/more/email.svg"
-import phoneIcon from "../../../../public/image/website/landing_page/more/smartphone.svg"
-import Logo from "../../../../public/image/logo-dark.svg"
-import Image from "next/image";
 
-const phoneNumber = "+234 809 420 0003";
-const email = "info@kreativerock.com";
+
+
 
 const NavigationMenu = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
 
     return (
-     <>
-
-         <ContactDiv className="md:px-4 lg:px-6 relative">
-             <div className="py-3 mx-0 p-4 px-0 lg:mx-12 lg:px-8 flex justify-content-center md:justify-content-end gap-6 md:gap-3">
-                 <div className="w-auto flex text-xl font-bold">
-                     <a href={`tel:+${1234567890}`}>
-                         <div className="flex">
-                             <Image
-                                 src={phoneIcon}
-                                 alt="KreativeRock Digital Logo"
-                                 style={{ width: "20px", height: "20px" }}
-                             />
-                             <span className="mt-1 ml-2 text-800 text-xs">
-                  {phoneNumber}
-                </span>
-                         </div>
-                     </a>
-                 </div>
-                 <div className="w-auto flex font-bold">
-                     <a href={`mailto:${email}`}>
-                         <div className="flex">
-                             <Image
-                                 src={emailIcon}
-                                 alt="KreativeRock Digital Logo"
-                                 style={{ width: "20px", height: "20px" }}
-                             />
-                             <span className="mt-1 ml-2 text-800 text-xs">{email}</span>
-                         </div>
-                     </a>
-                 </div>
-             </div>
-         </ContactDiv>
          <Container>
              <>
                  <Link href="/">
-                     <Image
-                         src={Logo}
-                         alt="Logo"
-                         height="50"
-                         className="mr-0 lg:ml-6"
-                     />
+                     {/*<Image*/}
+                     {/*    src={Logo}*/}
+                     {/*    alt="Logo"*/}
+                     {/*    height="50"*/}
+                     {/*    className="mr-0 lg:ml-6"*/}
+                     {/*/>*/}
                  </Link>
              </>
              <MenuIcon onClick={toggleMenu}>
@@ -70,29 +33,26 @@ const NavigationMenu = () => {
                  <NavItem>
                      <Link href="/">Home</Link>
                  </NavItem>
-
                  <NavItem>
-                     <Link href="/pricing">Pricing</Link>
+                     <Link href="/about">About</Link>
                  </NavItem>
-                 <Dropdown>
-                     <NavLink>Services</NavLink>
-                     <DropdownContent>
-                         <DropdownItem href="/mobiletexting">Mobile texting</DropdownItem>
-                         <DropdownItem href="/whatsappcampaign">WhatsApp business</DropdownItem>
-                         <DropdownItem href="/sponsoredAds">Sponsored ads</DropdownItem>
-                     </DropdownContent>
-                 </Dropdown>
+                 <NavItem>
+                     <Link href="/404">Work</Link>
+                 </NavItem>
+                 <NavItem>
+                     <Link href="/services">Services</Link>
+                 </NavItem>
+                 <NavItem>
+                     <Link href="/blogs">Blog</Link>
+                 </NavItem>
+                 <NavItem>
+                     <Link href="/404">Product</Link>
+                 </NavItem>
+                 <NavItem>
+                     <Link href="/404">CONTACT</Link>
+                 </NavItem>
              </NavCenter>
-             <NavEnd>
-                 <ButtonL>
-                     <a href="/login">Login</a>
-                 </ButtonL>
-                 <ButtonR>
-                     <a href="/register">Register</a>
-                 </ButtonR>
-             </NavEnd>
          </Container>
-     </>
     );
 };
 
@@ -100,8 +60,8 @@ const NavigationMenu = () => {
 
  const ContactDiv = styled.div`
   position:relative;
-  background: rgba(229, 252, 244, 0.45);
-  box-sizing: border-box;
+   background-image: linear-gradient(to right, #6C74D8, #201E1E);
+   box-sizing: border-box;
   border: none;
 a{
   text-decoration:none;
@@ -109,25 +69,15 @@ a{
    
 `;
 
+
 const Container = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  //background:linear-gradient(to right, #e7fffb, #ffdaa08c, #e7fffb); 
-  background: linear-gradient(
-          0deg,
-          rgba(255, 255, 255, 0.2),
-          rgba(255, 255, 255, 0.2)
-  ),
-  radial-gradient(
-          77.36% 256.97% at 77.36% 57.52%,
-          #f9dfc7 0%,
-          #bdefe8 20%,
-          #f9dfc7 70%
-  );
-  //position: sticky;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px 0px rgba(63, 76, 176, 0.24);
   top: 0;
-  padding: 1rem;
+  padding: 5px;
 `;
 
 
@@ -140,10 +90,11 @@ const MenuIcon = styled.div`
   cursor: pointer;
   z-index: 2;
 
+
   div {
     width: 100%;
     height: 0.2rem;
-    background-color: #fff;
+    background-color: #3F4CB0;
     border-radius: 0.1rem;
   }
 
@@ -156,6 +107,7 @@ const NavCenter = styled.ul<{ open: boolean }>`
   display: flex;
   list-style: none;
   align-items: start;
+  padding-right:4rem;
 
   @media (max-width: 768px) {
     display: ${(props) => (props.open ? 'flex' : 'none')};
@@ -163,8 +115,7 @@ const NavCenter = styled.ul<{ open: boolean }>`
     position: absolute;
     top: 6.7rem;
     left: 0;
-    background: linear-gradient(to right, #e7fffb, rgba(255, 218, 160, 0.96), #e7fffb);
-    //background: linear-gradient(to right, #e7fffb, #ffdaa08c, #e7fffb); 
+    background-color: #ffffff;
     width: 92%;
     margin: 0.7rem;
     padding: 1rem;
@@ -189,14 +140,21 @@ const NavEnd = styled.ul`
 const NavItem = styled.li`
   margin: 0 1rem;
   color:#ffffff;
-  font-size: 16px;
+  font-size: 14px;
   font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
-  
+   
   a{
     color:#000000;
     font-weight:600;
     text-decoration: none;
+    &:hover {
+      //background: #3F4CB099;
+      padding: 8px;
+      border:2px solid #3F4CB099;
+      border-radius:8px
+    }
   }
+
   @media (max-width: 768px) {
     padding:10px
   }
@@ -231,12 +189,12 @@ const Dropdown = styled.div`
 
 const DropdownContent = styled.div`
   position: absolute;
-  //background-color: #9a2e2e;
-  background:rgba(154, 151, 147, 0.55);
+  //background:rgba(154, 151, 147, 0.55);
+  background-color: #ffffff;
   border-radius: 5px;
   top: 100%;
   left: 0;
-  width: 16rem;
+  width: 18.5rem;
   //padding: 10px;
   display: none;
   z-index: 1;
@@ -260,7 +218,7 @@ const DropdownItem = styled(NavLink)`
   margin: 8px;
 
   &:hover {
-    background: #FF79004F;
+    background: #3F4CB0;
     padding: 8px
   }
 `;
